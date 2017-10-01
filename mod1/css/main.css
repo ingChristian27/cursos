@@ -5261,36 +5261,36 @@ body.dark .navigation-btn[data-action='show-menu']:before, body.dark [data-actio
     -webkit-transition: opacity .3s linear, -webkit-transform .3s linear;
   }
   /* line 795, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover:hover .widget-lang,
-  .navigation.enable-hover:hover .widget-search {
+  .navigation.enable-hover .widget-lang,
+  .navigation.enable-hover .widget-search {
     opacity: 1;
     visibility: visible;
   }
   /* line 801, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover:hover .navigation-link-btn {
+  .navigation.enable-hover .navigation-link-btn {
     opacity: 1;
     visibility: visible;
   }
   /* line 806, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover:hover .navigation-link-btn2 {
+  .navigation.enable-hover .navigation-link-btn2 {
     opacity: 1;
     visibility: visible;
   }
   /* line 812, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover:hover nav .menu_wrapper {
+  .navigation.enable-hover nav .menu_wrapper {
     -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     visibility: visible;
     opacity: 1;
   }
   /* line 819, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover:hover nav .wrapper-scroll {
+  .navigation.enable-hover nav .wrapper-scroll {
     -webkit-transition: opacity 0.2s 0.1s ease;
     transition: opacity 0.2s 0.1s ease;
     opacity: 1;
   }
   /* line 824, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover:hover nav .scales {
+  .navigation.enable-hover nav .scales {
     -webkit-transform: scale(1) translateZ(0.00001px);
     -ms-transform: scale(1) translateZ(0.00001px);
     transform: scale(1) translateZ(0.00001px);
@@ -5299,7 +5299,7 @@ body.dark .navigation-btn[data-action='show-menu']:before, body.dark [data-actio
 }
 @media screen and (min-width: 992px) and (-ms-high-contrast: active), screen and (min-width: 992px) and (-ms-high-contrast: none) {
   /* line 824, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover:hover nav .scales {
+  .navigation.enable-hover nav .scales {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
@@ -5307,7 +5307,7 @@ body.dark .navigation-btn[data-action='show-menu']:before, body.dark [data-actio
 }
 @media screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 0) {
   /* line 824, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover:hover nav .scales {
+  .navigation.enable-hover nav .scales {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
@@ -5315,11 +5315,11 @@ body.dark .navigation-btn[data-action='show-menu']:before, body.dark [data-actio
 }
 @media screen and (min-width: 992px) {
   /* line 835, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover:hover nav a {
+  .navigation.enable-hover nav a {
     pointer-events: auto;
   }
   /* line 839, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover:hover nav .wrapper-scroll {
+  .navigation.enable-hover nav .wrapper-scroll {
     height: 100%;
     width: 100%;
     -webkit-transition: height 0s ease;
