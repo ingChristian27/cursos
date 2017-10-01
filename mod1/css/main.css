@@ -5214,7 +5214,7 @@ body.dark .navigation-btn[data-action='show-menu']:before, body.dark [data-actio
   .navigation nav .scroll {
     padding-top: 0;
     padding-bottom: 0;
-    padding: 0 60px;
+    padding: 0 20px;
   }
   /* line 752, ../sass/cospo/elements/_navigation.scss */
   .navigation nav .scroll > .content-center {
@@ -6467,24 +6467,24 @@ button[data-action="show-lang"]:before {
   /* line 1910, ../sass/cospo/elements/_navigation.scss */
   .menu_wrapper .navigation-menu.carousel-menu li {
     -webkit-transform: perspective(1px) scale(0) rotate(0.02deg) translateZ(0.00001px);
-    -ms-transform: perspective(1px) scale(0) rotate(0.02deg) translateZ(0.00001px);
+    /*-ms-transform: perspective(1px) scale(0) rotate(0.02deg) translateZ(0.00001px);
     transform: perspective(1px) scale(0) rotate(0.02deg) translateZ(0.00001px);
-    opacity: 0;
+    opacity: 0;*/
   }
   /* line 1920, ../sass/cospo/elements/_navigation.scss */
   .menu_wrapper.mouse-over .navigation-menu.carousel-menu li {
-    opacity: 1;
+    /*opacity: 1;
     -webkit-transform: perspective(1px) scale(1) rotate(0.02deg) translateZ(0.00001px);
     -ms-transform: perspective(1px) scale(1) rotate(0.02deg) translateZ(0.00001px);
-    transform: perspective(1px) scale(1) rotate(0.02deg) translateZ(0.00001px);
+    transform: perspective(1px) scale(1) rotate(0.02deg) translateZ(0.00001px);*/
   }
   /* line 1924, ../sass/cospo/elements/_navigation.scss */
   .menu_wrapper.mouse-over .navigation-menu.carousel-menu li:hover {
-    opacity: 0.5 !important;
+    /*opacity: 0.5 !important;*/
   }
   /* line 1928, ../sass/cospo/elements/_navigation.scss */
   .menu_wrapper.mouse-over .navigation-menu.carousel-menu li a {
-    opacity: 1 !important;
+    /*opacity: 1 !important;*/
   }
 }
 /* Firefox rotate fix */
@@ -6541,9 +6541,10 @@ button[data-action="show-lang"]:before {
     }
     /* line 2013, ../sass/cospo/elements/_navigation.scss */
     .menu_wrapper.mouse-over .navigation-menu.carousel-menu li {
-      -webkit-transform: perspective(1px) scale(1) rotate(0.02deg) translateZ(0.00001px) !important;
+     /* -webkit-transform: perspective(1px) scale(1) rotate(0.02deg) translateZ(0.00001px) !important;
       -ms-transform: perspective(1px) scale(1) rotate(0.02deg) translateZ(0.00001px) !important;
       transform: perspective(1px) scale(1) rotate(0.02deg) translateZ(0.00001px) !important;
+      */
     }
   }
   /* End */
@@ -8089,9 +8090,9 @@ body.light .cospo-twitter ul li a:hover {
 /* line 65, ../sass/cospo/elements/_full-image.scss */
 .full-image-wrapper.onmouse-move .show-full-btn-left:before,
 .full-image-wrapper.onmouse-move .show-full-btn-right:before {
-  -webkit-transform: scale(0.95) translateZ(0.0005px);
+  /*-webkit-transform: scale(0.95) translateZ(0.0005px);
   -ms-transform: scale(0.95) translateZ(0.0005px);
-  transform: scale(0.95) translateZ(0.0005px);
+  transform: scale(0.95) translateZ(0.0005px);*/
 }
 @media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 0) {
   /* line 65, ../sass/cospo/elements/_full-image.scss */
@@ -8108,16 +8109,16 @@ body.light .cospo-twitter ul li a:hover {
 }
 /* line 76, ../sass/cospo/elements/_full-image.scss */
 .full-image-wrapper.onmouse-move .show-full-btn-close:before {
-  -webkit-transform: scale(0.95) translateZ(0.0005px);
+  /*-webkit-transform: scale(0.95) translateZ(0.0005px);
   -ms-transform: scale(0.95) translateZ(0.0005px);
-  transform: scale(0.95) translateZ(0.0005px);
+  transform: scale(0.95) translateZ(0.0005px);*/
 }
 @media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 0) {
   /* line 76, ../sass/cospo/elements/_full-image.scss */
   .full-image-wrapper.onmouse-move .show-full-btn-close:before {
-    -webkit-transform: scale(1);
+   /* -webkit-transform: scale(1);
     -ms-transform: scale(1);
-    transform: scale(1);
+    transform: scale(1);*/
   }
 }
 /* line 86, ../sass/cospo/elements/_full-image.scss */
@@ -8128,17 +8129,17 @@ body.light .cospo-twitter ul li a:hover {
 /* line 90, ../sass/cospo/elements/_full-image.scss */
 .full-image-wrapper.onmouse-over .show-full-btn-left:before,
 .full-image-wrapper.onmouse-over .show-full-btn-right:before {
-  -webkit-transform: scale(0.95) translateZ(0.0005px);
+  /*-webkit-transform: scale(0.95) translateZ(0.0005px);
   -ms-transform: scale(0.95) translateZ(0.0005px);
-  transform: scale(0.95) translateZ(0.0005px);
+  transform: scale(0.95) translateZ(0.0005px);*/
 }
 @media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 0) {
   /* line 90, ../sass/cospo/elements/_full-image.scss */
   .full-image-wrapper.onmouse-over .show-full-btn-left:before,
   .full-image-wrapper.onmouse-over .show-full-btn-right:before {
-    -webkit-transform: scale(1);
+   /* -webkit-transform: scale(1);
     -ms-transform: scale(1);
-    transform: scale(1);
+    transform: scale(1);*/
   }
 }
 /* line 98, ../sass/cospo/elements/_full-image.scss */
@@ -8147,16 +8148,16 @@ body.light .cospo-twitter ul li a:hover {
 }
 /* line 101, ../sass/cospo/elements/_full-image.scss */
 .full-image-wrapper.onmouse-over .show-full-btn-close:before {
-  -webkit-transform: scale(0.95) translateZ(0.0005px);
+ /* -webkit-transform: scale(0.95) translateZ(0.0005px);
   -ms-transform: scale(0.95) translateZ(0.0005px);
-  transform: scale(0.95) translateZ(0.0005px);
+  transform: scale(0.95) translateZ(0.0005px);*/
 }
 @media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 0) {
   /* line 101, ../sass/cospo/elements/_full-image.scss */
   .full-image-wrapper.onmouse-over .show-full-btn-close:before {
-    -webkit-transform: scale(1);
+   /* -webkit-transform: scale(1);
     -ms-transform: scale(1);
-    transform: scale(1);
+    transform: scale(1);*/
   }
 }
 /* line 110, ../sass/cospo/elements/_full-image.scss */
@@ -10989,6 +10990,7 @@ h6 .cospo-comment-content span {
 .log-in-form input {
   font-size: 1.143rem;
 }
-.menu_wrapper li a{
-    text-transform: capitalize;
+
+.main_home li a.clones-attack, .main_home li a{
+   text-transform: capitalize !important;
 }
