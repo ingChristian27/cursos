@@ -441,7 +441,7 @@ document.addEventListener('DOMContentLoaded', function () {
   * Init Scroll
   */
 	try {
-		scroll.init();
+		//scroll.init();
 	} catch (e) {
 		console.error('Scroll problem: ' + e);
 	}

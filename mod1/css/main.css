@@ -8124,7 +8124,7 @@ body.light .cospo-twitter ul li a:hover {
 /* line 86, ../sass/cospo/elements/_full-image.scss */
 .full-image-wrapper.onmouse-over .show-full-btn-left,
 .full-image-wrapper.onmouse-over .show-full-btn-right {
-  opacity: 1;
+  /*opacity: 1;*/
 }
 /* line 90, ../sass/cospo/elements/_full-image.scss */
 .full-image-wrapper.onmouse-over .show-full-btn-left:before,
@@ -8144,7 +8144,7 @@ body.light .cospo-twitter ul li a:hover {
 }
 /* line 98, ../sass/cospo/elements/_full-image.scss */
 .full-image-wrapper.onmouse-over .show-full-btn-close {
-  opacity: 1;
+  /*opacity: 1;*/
 }
 /* line 101, ../sass/cospo/elements/_full-image.scss */
 .full-image-wrapper.onmouse-over .show-full-btn-close:before {
@@ -9095,7 +9095,7 @@ body.fasion-designer .navigation button.navigation-btn[data-action="go-next-page
 /* line 29, ../sass/cospo/demos/_fashion-designer.scss */
 body.fasion-designer .navigation.open,
 body.fasion-designer .navigation .scales {
-  background-color: rgba(78, 171, 137, 0.9); 
+  background-color: rgba(113, 183, 75, 0.74);
 }
 /* line 35, ../sass/cospo/demos/_fashion-designer.scss */
 body.fasion-designer .navigation .widget-overlay-bottom, body.fasion-designer .navigation .widget-overlay-top {
@@ -10993,4 +10993,7 @@ h6 .cospo-comment-content span {
 
 .main_home li a.clones-attack, .main_home li a{
    text-transform: capitalize !important;
+}
+.audio_img_wrap a {
+    border: none;
 }
