@@ -298,10 +298,26 @@
               <h2>Objetivos</h2>
               <h6>Modulo 2  |  Comunicaci&oacute;n seg&uacute;n la Programaci&oacute;n Neuro Ling&uuml;&iacute;stica</h6>
               <br/>
-              <audio controls>
-                <source src="audios/O2.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-              </audio>
+              
+            <div class="audio_img_wrap">
+            <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
+            <a href="javascript:document.getElementById('audio_O2').pause();document.getElementById('O2_play').hidden=false">
+              <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
+            </a>
+            <a href="javascript:document.getElementById('audio_O2').play();document.getElementById('O2_play').hidden=true">
+              <img id="O2_play" class="audio_play" src="imagenes/general/audio_play.png"/ >
+            </a>
+          </div>
+          <audio id="audio_O2" class="audio_control" controls>
+            <source src="audios/O2.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <script >
+          document.getElementById('audio_O2').onended = function() {
+              document.getElementById('O2_play').hidden=false;
+          };
+          </script>
+
               <div class="display-table row">
                 <div class="display-table-cell col-md-3">
                   <img src="imagenes/objetivos/iphone-element-1.png" alt=""/>
@@ -436,17 +452,20 @@
         </figure>
 
         <div class="content">
+          <h2 class="my_title">POSICIONES PERCEPTIVAS. MAPAS Y FILTROS</h2>
 
-          <p><strong>Primera:</strong> mi punto de vista --&gt; subjetivo</p>
-          <p><strong>Segunda:</strong> punto de vista del otro --&gt; empat&iacute;a</p>
-          <p><strong>Tercera:</strong> punto de vista externo --&gt; objetivo</p>
-          <p><strong>Cuarta:</strong> punto de vista organizativo --&gt; estrat&eacute;gico</p>
-
-          <p><strong>IDENTIFICACI&Oacute;N DE SE&Ntilde;ALES</strong></p>
-          <ul>
-            <li><strong>CONGRUENTES:</strong> MENSAJES AMBIGUOS DAN OPCION A QUE DEBEN CORREGIRSE.</li>
-            <li><strong>INCONGRUENTES:</strong> EXISTENCIA DE RESERVAS PARA HACER UNA CONDUCTA.</li>
-          </ul>
+          <div class="my_bodytext">
+            <p><strong>Primera:</strong> mi punto de vista --&gt; subjetivo</p>
+            <p><strong>Segunda:</strong> punto de vista del otro --&gt; empat&iacute;a</p>
+            <p><strong>Tercera:</strong> punto de vista externo --&gt; objetivo</p>
+            <p><strong>Cuarta:</strong> punto de vista organizativo --&gt; estrat&eacute;gico</p>
+          </div>
+<br><br>
+          <p class="my_subtitle"><strong>IDENTIFICACI&Oacute;N DE SE&Ntilde;ALES</strong></p>
+       
+            <p class="my_bodytext"><strong>CONGRUENTES:</strong> MENSAJES AMBIGUOS DAN OPCION A QUE DEBEN CORREGIRSE.</p>
+            <p class="my_bodytext"><strong>INCONGRUENTES:</strong> EXISTENCIA DE RESERVAS PARA HACER UNA CONDUCTA.</p>
+          
         </div><!--content-->
 
       </div>
@@ -479,14 +498,16 @@
         </figure>
 
         <div class="content">
-          <p><strong>Maneras en las que recogemos, almacenamos y codificamos la informaci&oacute;n en nuestra mente</strong></p>
-          <p>Los olores, sonidos, sabores, olores, sentimientos los recordamos de forma consciente o inconsciente y se conectan con los pensamientos.</p>
-          <p>Los comunicamos mediante palabras, el tono y el lenguaje corporal.</p>
-          <p>Tal como los recordamos o imaginamos forman la experiencia y&hellip;</p>
-          <p>&nbsp;</p>
-          <p><strong>Decidimos por la experiencia</strong></p>
-          <p>De ah&iacute; la importancia de los sistemas de representaci&oacute;n</p>
-
+          <h2 class="my_title">SISTEMAS REPRESENTATIVOS</h2>
+          <p class="my_subtitle"><strong>Maneras en las que recogemos, almacenamos y codificamos la informaci&oacute;n en nuestra mente</strong></p>
+          <div class="my_bodytext">
+            <p>Los olores, sonidos, sabores, olores, sentimientos los recordamos de forma consciente o inconsciente y se conectan con los pensamientos.</p>
+            <p>Los comunicamos mediante palabras, el tono y el lenguaje corporal.</p>
+            <p>Tal como los recordamos o imaginamos forman la experiencia y&hellip;</p>
+            <p>&nbsp;</p>
+            <p><strong>Decidimos por la experiencia</strong></p>
+            <p>De ah&iacute; la importancia de los sistemas de representaci&oacute;n</p>
+</div>
         </div><!--content-->
 
       </div>
@@ -519,26 +540,31 @@
         </figure>
 
         <div class="content">
-          <p><strong>&iquest;QU&Eacute; </strong><strong>SON?</strong></p>
-          <p>Los Metaprogramas son filtros que utilizamos en nuestra percepci&oacute;n que nos sirven para decidir a qu&eacute; cosas les prestamos atenci&oacute;n y cuales quedar&aacute;n afuera. La manera en como realizamos ese filtraje de la informaci&oacute;n es el resultado de nuestros Metaprogramas o estilos de elecci&oacute;n que tienen que ver con nuestras creencias, valores, cultura, actitudes y recuerdos.</p>
-          <p><strong>Estilos en la toma de decisiones</strong></p>
-          <ul>
+          <h2 class="my_title">METAPROGRAMAS</h2>
+          <p class="my_subtitle"><strong>&iquest;QU&Eacute; </strong><strong>SON?</strong></p>
+          <div class="my_bodytext">
+            <p>Los Metaprogramas son filtros que utilizamos en nuestra percepci&oacute;n que nos sirven para decidir a qu&eacute; cosas les prestamos atenci&oacute;n y cuales quedar&aacute;n afuera. La manera en como realizamos ese filtraje de la informaci&oacute;n es el resultado de nuestros Metaprogramas o estilos de elecci&oacute;n que tienen que ver con nuestras creencias, valores, cultura, actitudes y recuerdos.</p>
+        </div>
+
+          <p class="my_subtitle"><strong>Estilos en la toma de decisiones</strong></p>
+          <div class="my_bodytext">
             <li><u><strong>Igualador / diferenciador</strong></u>
               <ul>
                 <li>Perciben lo que hay de com&uacute;n en las cosas</li>
                 <li>Perciben las diferencias al hacer comparaciones</li>
               </ul>
             </li>
-          </ul>
-          <ul>
+         
+
+          
             <li><u><strong>Proactivo / reactivo</strong></u>
               <ul>
                 <li>Inicia la acci&oacute;n</li>
                 <li>Espera a los otros</li>
               </ul>
             </li>
-          </ul>
-          <ul>
+          
+          
             <li><u><strong>Gen&eacute;rico/especifico</strong></u>
               <ul>
                 <li>Ve el cuadro entero. Grandes segmentos de informaci&oacute;n.</li>
@@ -546,32 +572,34 @@
                 <li></li>
               </ul>
             </li>
-          </ul>
+          
           <p><strong>Estilos en la toma de decisiones</strong></p>
-          <ul>
+          
             <li><u><strong>Afrontar/eludir</strong></u>
               <ul>
                 <li>Van a aquello que desean.</li>
                 <li>Descubren los problemas pero saben lo que tiene que evitar</li>
               </ul>
             </li>
-          </ul>
-          <ul>
+          
+          
             <li><u><strong>Opciones/procedimiento</strong></u>
               <ul>
                 <li>Crea alternativas</li>
                 <li>Sigue esquemas y acciones ya programas</li>
               </ul>
             </li>
-          </ul>
-          <ul>
+          
+         
             <li><u><strong>Interno/externo</strong></u>
               <ul>
                 <li>Interiorizados sus criterios, los usa para comparar y decidir.</li>
                 <li>Necesita que otro le indique los criterio y el rumbo</li>
               </ul>
             </li>
-          </ul>
+          
+
+          </div>
 
         </div><!--content-->
 
@@ -598,18 +626,20 @@
         <figure class="page-figure">
           <img src="imagenes/aprender/image.jpg" alt="">
           <figcaption>
-            <h2>4. APRENDER DE LOS ERRORES</h2>
+            <h2>APRENDER DE LOS ERRORES</h2>
             <h6>Modulo 2  |  Comunicaci&oacute;n seg&uacute;n la Programaci&oacute;n Neuro Ling&uuml;&iacute;stica</h6>
             <br><br>
           </figcaption>
         </figure>
 
         <div class="content">
-          <p><strong>Actuaci&oacute;n al elegir la alternativa equivocada</strong></p>
-          <p><strong>T.O.T.E. --&gt;</strong><strong>&nbsp;Test </strong><strong>operate</strong><strong> test </strong><strong>exit</strong></p>
-          <p>Lo que hacemos lo comparamos con lo que deseamos: corregimos nuestra</p>
-          <p>actuaci&oacute;n y disminuye la distancia entre ellos</p>
-
+          <h2 class="my_title">APRENDER DE LOS ERRORES</h2>
+          <div class="my_bodytext">
+            <p><strong>Actuaci&oacute;n al elegir la alternativa equivocada</strong></p>
+            <p><strong>T.O.T.E. --&gt;</strong><strong>&nbsp;Test </strong><strong>operate</strong><strong> test </strong><strong>exit</strong></p>
+            <p>Lo que hacemos lo comparamos con lo que deseamos: corregimos nuestra</p>
+            <p>actuaci&oacute;n y disminuye la distancia entre ellos</p>
+</div>
         </div><!--content-->
 
       </div>
@@ -642,23 +672,26 @@
         </figure>
 
         <div class="content">
-          <p><strong>Definici&oacute;n:</strong></p>
-          <p>Cualquier cosa que da acceso a un estado emocional</p>
-          <p><strong>Anclaje:</strong></p>
-          <p>Es transferir la experiencia pasada a la conducta actual</p>
-          <p><strong>Definir las asociaciones que nos sean &uacute;tiles:</strong></p>
-          <ol>
-            <li>Escoger el estado emocional deseado y anclarlo (sincronizar).</li>
-            <li>Traerlo cuando se quiera.</li>
-            <li>Ha de ser &uacute;nica (no asociada antes).</li>
-            <li>Discreta.</li>
-            <li>F&aacute;cil de repetir.</li>
-          </ol>
-          <p><strong>Se crean por:</strong></p>
-          <ul>
-            <li>Repetici&oacute;n</li>
-            <li>Si es fuerte basta con una sola ocasi&oacute;n</li>
-          </ul>
+          <h2 class="my_title">ANCLAJE DE LAS OPCIONES ELEGIDAS</h2>
+          <div class="my_bodytext">
+            <p><strong>Definici&oacute;n:</strong></p>
+            <p>Cualquier cosa que da acceso a un estado emocional</p>
+            <p><strong>Anclaje:</strong></p>
+            <p>Es transferir la experiencia pasada a la conducta actual</p>
+            <p><strong>Definir las asociaciones que nos sean &uacute;tiles:</strong></p>
+            <ol>
+              <li>Escoger el estado emocional deseado y anclarlo (sincronizar).</li>
+              <li>Traerlo cuando se quiera.</li>
+              <li>Ha de ser &uacute;nica (no asociada antes).</li>
+              <li>Discreta.</li>
+              <li>F&aacute;cil de repetir.</li>
+            </ol>
+            <p><strong>Se crean por:</strong></p>
+            
+              <li>Repetici&oacute;n</li>
+              <li>Si es fuerte basta con una sola ocasi&oacute;n</li>
+            
+          </div>
 
         </div><!--content-->
 
@@ -692,39 +725,42 @@
         </figure>
 
         <div class="content">
-          <p><strong><em>Se trata de conseguir la informaci&oacute;n correcta a base de utilizar el propio lenguaje </em></strong></p>
-          <p><strong>Omisiones</strong></p>
-          <p><strong>Cuando elegimos el mensaje para representar nuestras ideas o sentimientos, omitimos parte de la informaci&oacute;n:</strong></p>
-          <ul>
-            <li>Omisi&oacute;n adverbio de modo: &ldquo;lo enviar&eacute; r&aacute;pido&rdquo;.</li>
-            <li>Omisi&oacute;n de la referencia con la que se compara: &ldquo;ingresaron menos enfermos&rdquo;.</li>
-            <li>Omisi&oacute;n de posibilidad y necesidad: &ldquo;no puedo ir la gimnasio&rdquo;.</li>
-          </ul>
-          <p>&nbsp;</p>
-          <p><strong>Generalizaciones</strong></p>
-          <p><strong>Utilizamos una forma impersonal cuando hablamos de un grupo o de nosotros mismos:</strong></p>
-          <ul>
-            <li>Cuantificadores universales: todos, nadie, nunca&hellip;: &ldquo;todos los ancianos son ego&iacute;stas&rdquo;</li>
-            <li>Juicio: quien est&aacute; haciendo el juicio: &ldquo;evidentemente, &eacute;ste es el candidato ideal&rdquo;</li>
-          </ul>
-          <p>&nbsp;</p>
-          <p><strong>Distorsiones: sustituyen datos</strong></p>
-          <ul>
-            <li><strong>Nominaciones</strong>: sentencian con una frase: &ldquo;los partidos pol&iacute;ticos son poco serios&rdquo;.</li>
-            <li><strong>Adivinaci&oacute;n:</strong> &ldquo;s&eacute; exactamente lo que va a decir&rdquo;.</li>
-            <li><strong>Relaciones causa &ndash; efecto:</strong> &ldquo;saldr&iacute;a con ella si pudiera llevarla a un sitio caro&rdquo;.</li>
-          </ul>
-          <p>&nbsp;</p>
-          <p><strong>Emplear las palabras precisas</strong></p>
-          <ul>
-            <li>Para que tengan el significado que les doy en los mapas de los dem&aacute;s.</li>
-            <li>Para que determinen lo que realmente quiero comunicar.</li>
-            <li>Aclarar las omisiones, distorsiones y generalidades.</li>
-            <li>Llenar la informaci&oacute;n perdida.</li>
-            <li>Sonsacar la informaci&oacute;n inespec&iacute;fica.</li>
-            <li>Reunir informaci&oacute;n de alta calidad.</li>
-            <li>Dar opciones.</li>
-          </ul>
+          <h2 class="my_title">EL METAMODELO</h2>
+          <div class="my_bodytext">
+            <p><strong><em>Se trata de conseguir la informaci&oacute;n correcta a base de utilizar el propio lenguaje </em></strong></p>
+            <p><strong>Omisiones</strong></p>
+            <p><strong>Cuando elegimos el mensaje para representar nuestras ideas o sentimientos, omitimos parte de la informaci&oacute;n:</strong></p>
+            <ul>
+              <li>Omisi&oacute;n adverbio de modo: &ldquo;lo enviar&eacute; r&aacute;pido&rdquo;.</li>
+              <li>Omisi&oacute;n de la referencia con la que se compara: &ldquo;ingresaron menos enfermos&rdquo;.</li>
+              <li>Omisi&oacute;n de posibilidad y necesidad: &ldquo;no puedo ir la gimnasio&rdquo;.</li>
+            </ul>
+            <p>&nbsp;</p>
+            <p><strong>Generalizaciones</strong></p>
+            <p><strong>Utilizamos una forma impersonal cuando hablamos de un grupo o de nosotros mismos:</strong></p>
+            <ul>
+              <li>Cuantificadores universales: todos, nadie, nunca&hellip;: &ldquo;todos los ancianos son ego&iacute;stas&rdquo;</li>
+              <li>Juicio: quien est&aacute; haciendo el juicio: &ldquo;evidentemente, &eacute;ste es el candidato ideal&rdquo;</li>
+            </ul>
+            <p>&nbsp;</p>
+            <p><strong>Distorsiones: sustituyen datos</strong></p>
+            <ul>
+              <li><strong>Nominaciones</strong>: sentencian con una frase: &ldquo;los partidos pol&iacute;ticos son poco serios&rdquo;.</li>
+              <li><strong>Adivinaci&oacute;n:</strong> &ldquo;s&eacute; exactamente lo que va a decir&rdquo;.</li>
+              <li><strong>Relaciones causa &ndash; efecto:</strong> &ldquo;saldr&iacute;a con ella si pudiera llevarla a un sitio caro&rdquo;.</li>
+            </ul>
+            <p>&nbsp;</p>
+            <p><strong>Emplear las palabras precisas</strong></p>
+            <ul>
+              <li>Para que tengan el significado que les doy en los mapas de los dem&aacute;s.</li>
+              <li>Para que determinen lo que realmente quiero comunicar.</li>
+              <li>Aclarar las omisiones, distorsiones y generalidades.</li>
+              <li>Llenar la informaci&oacute;n perdida.</li>
+              <li>Sonsacar la informaci&oacute;n inespec&iacute;fica.</li>
+              <li>Reunir informaci&oacute;n de alta calidad.</li>
+              <li>Dar opciones.</li>
+            </ul>
+          </div>
 
         </div><!--content-->
 
@@ -758,13 +794,32 @@
         </figure>
 
         <div class="content">
-          <p><strong>&iquest;Qu&eacute; es la PNL?</strong></p>
-          <p>La Programaci&oacute;n Neuroling&uuml;&iacute;stica es una estrategia de&nbsp;comunicaci&oacute;n que sostienen que existe una conexi&oacute;n entre los procesos neurol&oacute;gicos, el lenguaje, y los patrones de comportamiento aprendidos a trav&eacute;s de la experiencia, afirmando que estos se pueden cambiar para lograr objetivos espec&iacute;ficos en la vida.</p>
+          <h2 class="my_title">EL LENGUAJE NO VERBAL EN LA PNL</h2>
+          <p class="my_subtitle"><strong>&iquest;Qu&eacute; es la PNL?</strong></p>
 
-          <audio controls>
+ <div class="audio_img_wrap">
+            <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
+            <a href="javascript:document.getElementById('audio_A14').pause();document.getElementById('A14_play').hidden=false">
+              <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
+            </a>
+            <a href="javascript:document.getElementById('audio_A14').play();document.getElementById('A14_play').hidden=true">
+              <img id="A14_play" class="audio_play" src="imagenes/general/audio_play.png"/ >
+            </a>
+          </div>
+          <audio id="audio_A14" class="audio_control" controls>
             <source src="audios/A14.mp3" type="audio/mp3">
             Your browser does not support the audio element.
           </audio>
+          <script >
+          document.getElementById('audio_A14').onended = function() {
+              document.getElementById('A14_play').hidden=false;
+          };
+          </script>
+
+<div class="my_bodytext">
+          <p>La Programaci&oacute;n Neuroling&uuml;&iacute;stica es una estrategia de&nbsp;comunicaci&oacute;n que sostienen que existe una conexi&oacute;n entre los procesos neurol&oacute;gicos, el lenguaje, y los patrones de comportamiento aprendidos a trav&eacute;s de la experiencia, afirmando que estos se pueden cambiar para lograr objetivos espec&iacute;ficos en la vida.</p>
+
+         
 
           <p><strong>Palabras</strong></p>
           <ul>
@@ -800,6 +855,7 @@
               </ul>
             </li>
           </ul>
+          </div>
 
         </div><!--content-->
 
@@ -833,29 +889,31 @@
         </figure>
 
         <div class="content">
-          <p><strong>Operadores modales</strong></p>
-          <p><em>Se ponen l&iacute;mites por reglas no dichas</em></p>
-          <ul>
-            <li>De <strong>posibilidad</strong>: no poder, no posible. Se cuestiona con: &ldquo;&iquest;qu&eacute; le impide&hellip;?&rdquo;</li>
-            <li>De <strong>necesidad</strong>: no deber&iacute;a. Juicio de valor. Se cuestiona con: &ldquo;&iquest;qu&eacute; pasar&iacute;a si&hellip;?&rdquo;</li>
-            <li><strong>Cuantificadores universales</strong>: nunca, jam&aacute;s. Se cuestiona con: &ldquo;&iquest;ha habido alg&uacute;n momento en que&hellip;?&rdquo;</li>
-            <li><strong>Presuposiciones</strong>: suponer cosas de otro en base a nuestras expectativas. Se cuestionan con: &ldquo;&iquest;qu&eacute; te hace creer que&hellip;?&rdquo;, &ldquo;Lo entenderas cuando seas listo&rdquo; --&gt; presupone que no lo eres.</li>
-          </ul>
-          <p><strong>Operadores modales</strong></p>
-          <ul>
-            <li><strong>Equivalencia completa</strong>: dos afirmaciones se relacionan de tal forma que se entienden igual. Se cuestionan con: &ldquo;&iquest;c&oacute;mo que esto significa lo otro?&rdquo;. No sonr&iacute;e --&gt; presupone que no se divierte.</li>
-            <li><strong>Causa y efecto</strong>: algo es responsable de un estado. Se cuestionan con: &ldquo;&iquest;de qu&eacute; manera exacta esto causa lo otro?&rdquo;. &ldquo;El tiempo esta gris&rdquo; --&gt; presupone que deprime.</li>
-          </ul>
-          <p>Proyectamos nuestros pensamientos, sensaciones y emociones en los otros y sin embargo los recibimos como si fueran de ellos.</p>
-          <p>Respondemos intuitivamente al leer la mente de los dem&aacute;s:</p>
-          <ul>
-            <li>Suponemos lo que piensa / siente el otro.</li>
-            <li>Ellos no pueden leer nuestra mente y les acusamos de no entendernos.</li>
-          </ul>
-          <p>&nbsp; Se cuestiona con: &ldquo;&iquest;c&oacute;mo se o sabes exactamente qu&eacute;?&rdquo;</p>
-          <p><strong>Postulados de </strong><strong>conversaci&oacute;n: </strong></p>
-          <p>Preguntas que en su sentido literal, requieren respuestas de tipo &ldquo;si&rdquo; o &ldquo;no&rdquo;.</p>
-          <p>Pueden confundirse entre nuestro deseo / intenci&oacute;n o la acci&oacute;n del otro: &ldquo;todav&iacute;a est&aacute; abierta la puerta&rdquo; --&gt; ci&eacute;rrala.</p>
+           <h2 class="my_titley">HERRAMIENTAS COMUNICATIVAS</h2>
+          <p class="my_subtitle"><strong>Operadores modales</strong></p>
+
+          <div class="my_bodytext">
+            <p><em>Se ponen l&iacute;mites por reglas no dichas</em></p>
+            <ul>
+              <li>De <strong>posibilidad</strong>: no poder, no posible. Se cuestiona con: &ldquo;&iquest;qu&eacute; le impide&hellip;?&rdquo;</li>
+              <li>De <strong>necesidad</strong>: no deber&iacute;a. Juicio de valor. Se cuestiona con: &ldquo;&iquest;qu&eacute; pasar&iacute;a si&hellip;?&rdquo;</li>
+              <li><strong>Cuantificadores universales</strong>: nunca, jam&aacute;s. Se cuestiona con: &ldquo;&iquest;ha habido alg&uacute;n momento en que&hellip;?&rdquo;</li>
+              <li><strong>Presuposiciones</strong>: suponer cosas de otro en base a nuestras expectativas. Se cuestionan con: &ldquo;&iquest;qu&eacute; te hace creer que&hellip;?&rdquo;, &ldquo;Lo entenderas cuando seas listo&rdquo; --&gt; presupone que no lo eres.</li>
+            
+              <li><strong>Equivalencia completa</strong>: dos afirmaciones se relacionan de tal forma que se entienden igual. Se cuestionan con: &ldquo;&iquest;c&oacute;mo que esto significa lo otro?&rdquo;. No sonr&iacute;e --&gt; presupone que no se divierte.</li>
+              <li><strong>Causa y efecto</strong>: algo es responsable de un estado. Se cuestionan con: &ldquo;&iquest;de qu&eacute; manera exacta esto causa lo otro?&rdquo;. &ldquo;El tiempo esta gris&rdquo; --&gt; presupone que deprime.</li>
+            </ul>
+            <p>Proyectamos nuestros pensamientos, sensaciones y emociones en los otros y sin embargo los recibimos como si fueran de ellos.</p>
+            <p>Respondemos intuitivamente al leer la mente de los dem&aacute;s:</p>
+            <ul>
+              <li>Suponemos lo que piensa / siente el otro.</li>
+              <li>Ellos no pueden leer nuestra mente y les acusamos de no entendernos.</li>
+            </ul>
+            <p>&nbsp; Se cuestiona con: &ldquo;&iquest;c&oacute;mo se o sabes exactamente qu&eacute;?&rdquo;</p>
+            <p><strong>Postulados de </strong><strong>conversaci&oacute;n: </strong></p>
+            <p>Preguntas que en su sentido literal, requieren respuestas de tipo &ldquo;si&rdquo; o &ldquo;no&rdquo;.</p>
+            <p>Pueden confundirse entre nuestro deseo / intenci&oacute;n o la acci&oacute;n del otro: &ldquo;todav&iacute;a est&aacute; abierta la puerta&rdquo; --&gt; ci&eacute;rrala.</p>
+          </div>
 
         </div><!--content-->
 
@@ -885,6 +943,25 @@
               <h2 class="my_title">Experto en Técnicas Avanzadas de Comunicación Profesional</h2>
               <h6 class="my_subtitle">Recuerda:</h6>
               <br/>
+
+                        <div class="audio_img_wrap">
+            <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
+            <a href="javascript:document.getElementById('audio_R2').pause();document.getElementById('R2_play').hidden=false">
+              <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
+            </a>
+            <a href="javascript:document.getElementById('audio_R2').play();document.getElementById('R2_play').hidden=true">
+              <img id="R2_play" class="audio_play" src="imagenes/general/audio_play.png"/ >
+            </a>
+          </div>
+          <audio id="audio_R2" class="audio_control" controls>
+            <source src="audios/R2.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <script >
+          document.getElementById('audio_R2').onended = function() {
+              document.getElementById('R2_play').hidden=false;
+          };
+          </script>
 
               <div class="display-table row">
                 <div class="display-table-cell col-md-3">

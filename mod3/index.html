@@ -297,10 +297,24 @@
               <h6>Modulo 3  |  Comunicación no verbal: Cómo leer el pensamiento</h6>
               <br/>
 
-              <audio controls>
-                <source src="audios/O3.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-              </audio>
+          <div class="audio_img_wrap">
+            <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
+            <a href="javascript:document.getElementById('audio_O3').pause();document.getElementById('O3_play').hidden=false">
+              <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
+            </a>
+            <a href="javascript:document.getElementById('audio_O3').play();document.getElementById('O3_play').hidden=true">
+              <img id="O3_play" class="audio_play" src="imagenes/general/audio_play.png"/ >
+            </a>
+          </div>
+          <audio id="audio_O3" class="audio_control" controls>
+            <source src="audios/O3.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <script >
+          document.getElementById('audio_O3').onended = function() {
+              document.getElementById('O3_play').hidden=false;
+          };
+          </script>
 
               <div class="display-table row">
                 <div class="display-table-cell col-md-3">
@@ -375,13 +389,17 @@
         </figure>
 
         <div class="content">
-          <p><strong>Dif&iacute;cil de definir: </strong></p>
-          <p>&iquest;Es comunicaci&oacute;n?&nbsp; &iquest;Puede aprenderse?</p>
-          <p><strong>Una vez que se ha vuelto efectivo en el env&iacute;o de mensajes orales, escritos y no verbales, esta a medio camino de convertirse en un comunicador completo</strong></p>
-          <p><strong>Tambi&eacute;n necesita desarrollar capacidades adecuadas de recepci&oacute;n. </strong></p>
-          <p><strong>Los receptores necesitan buenas habilidades para escuchar, leer y observar.</strong></p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
+            <h2 class="my_title">CONSIDERACIONES BÁSICAS</h2>
+          
+          <div class="my_bodytext">
+            <p><strong>Dif&iacute;cil de definir: </strong></p>
+            <p>&iquest;Es comunicaci&oacute;n?&nbsp; &iquest;Puede aprenderse?</p>
+            <p><strong>Una vez que se ha vuelto efectivo en el env&iacute;o de mensajes orales, escritos y no verbales, esta a medio camino de convertirse en un comunicador completo</strong></p>
+            <p><strong>Tambi&eacute;n necesita desarrollar capacidades adecuadas de recepci&oacute;n. </strong></p>
+            <p><strong>Los receptores necesitan buenas habilidades para escuchar, leer y observar.</strong></p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+          </div>
 
         </div><!--content-->
 
@@ -415,22 +433,25 @@
         </figure>
 
         <div class="content">
-          <p><strong>La mayor&iacute;a de los gestos de comunicaci&oacute;n son los mismos en todo el mundo:</strong></p>
-          <ul>
-            <li>Sonre&iacute;r = sentirse feliz</li>
-            <li>Fruncir el ce&ntilde;o = estar triste o enfadado</li>
-            <li>Asentir con la cabeza = estar de acuerdo</li>
-            <li>Mover la cabeza de un lado a otro = estar en desacuerdo</li>
-            <li>Mostrar los dientes = atacar, desd&eacute;n u hostilidad</li>
-            <li>Encogerse de hombros = no saber o entender</li>
-          </ul>
-          <p><strong>En algunos gestos existen diferencias culturales:</strong> puede resultar com&uacute;n y tener un significado conocido en una cultura y desconocerse o interpretarse distintamente en otra.</p>
-          <p><strong>Tres gestos comunes con las manos:</strong></p>
-          <ul>
-            <li>El del anillo &ldquo;ok&rdquo;</li>
-            <li>El pulgar hacia arriba</li>
-            <li>La v</li>
-          </ul>
+          <h2 class="my_title">EL LENGUAJE DE LOS GESTOS</h2>
+          <div class="my_bodytext">
+            <p><strong>La mayor&iacute;a de los gestos de comunicaci&oacute;n son los mismos en todo el mundo:</strong></p>
+            <ul>
+              <li>Sonre&iacute;r = sentirse feliz</li>
+              <li>Fruncir el ce&ntilde;o = estar triste o enfadado</li>
+              <li>Asentir con la cabeza = estar de acuerdo</li>
+              <li>Mover la cabeza de un lado a otro = estar en desacuerdo</li>
+              <li>Mostrar los dientes = atacar, desd&eacute;n u hostilidad</li>
+              <li>Encogerse de hombros = no saber o entender</li>
+            </ul>
+            <p><strong>En algunos gestos existen diferencias culturales:</strong> puede resultar com&uacute;n y tener un significado conocido en una cultura y desconocerse o interpretarse distintamente en otra.</p>
+            <p><strong>Tres gestos comunes con las manos:</strong></p>
+            <ul>
+              <li>El del anillo &ldquo;ok&rdquo;</li>
+              <li>El pulgar hacia arriba</li>
+              <li>La v</li>
+            </ul>
+          </div>
 
         </div><!--content-->
 
@@ -464,38 +485,41 @@
         </figure>
 
         <div class="content">
-          <p><strong>Movimientos del cuerpo o </strong><strong>cin&eacute;sicos</strong><strong>:</strong></p>
-          <p style="padding-left: 30px;">A)Emblemas: traducen las frases --&gt; hacer &ldquo;no&rdquo; con el dedo</p>
-          <p style="padding-left: 30px;">B) ilustradores: refuerzan lo que se dice &ldquo;&iexcl;que no!&rdquo;</p>
-          <p style="padding-left: 30px;">C) muestras de afecto: acompa&ntilde;an a los estados afectivos --&gt; tirar un beso</p>
-          <p style="padding-left: 30px;">D) reguladores: en una interacci&oacute;n, dan pi&eacute; para que el otro intervenga</p>
-          <p style="padding-left: 30px;">E) adaptadores: a las necesidades del momento</p>
-          <p><strong>Caracter&iacute;sticas f&iacute;sicas: atracci&oacute;n, olor, altura, colores, temperatura</strong></p>
-          <p><strong>Conducta t&aacute;ctil</strong></p>
-          <p>&nbsp;</p>
-          <p><strong>Paralenguaje</strong>&nbsp;--&gt;<strong>&nbsp;c&oacute;mo se dicen las cosas:</strong></p>
-          <p style="padding-left: 30px;">A) cualidades de la voz: registro, intensidad</p>
-          <p style="padding-left: 30px;">B) vocalizaciones: pronunciar todas las letras diferenciadas</p>
-          <p style="padding-left: 30px;">C) segregaciones vocales: evitar las coletillas tales como &ldquo;uhm&hellip;&rdquo;</p>
-          <p><strong>Prox&eacute;mica</strong>&nbsp;--&gt;<strong>&nbsp;percepci&oacute;n del espacio personal y social. Territorialidad</strong></p>
-          <p><strong>Artefactos: manipulaci&oacute;n de objetos: gafas, ropa, pelo&hellip;</strong></p>
-          <p>&nbsp;</p>
-          <p><strong>Repetir lo que se dice verbalmente: </strong></p>
-          <p style="padding-left: 30px;">Se&ntilde;alar mientras se dice algo:</p>
-          <p style="padding-left: 60px;">&ldquo;Ah&iacute; est&aacute; el norte&rdquo;</p>
-          <p><strong>Contradecir:</strong></p>
-          <p style="padding-left: 30px;">Gritar con mal car&aacute;cter mientras se dice</p>
-          <p style="padding-left: 60px;">&nbsp;&ldquo;&iexcl;Te quiero!&rdquo;</p>
-          <p><strong>Sustituir:</strong></p>
-          <p style="padding-left: 30px;">Cambiar frases por gestos, como por ejemplo chistar para hacer guardar&nbsp; silencio</p>
-          <p><strong>Complementar: </strong></p>
-          <p style="padding-left: 30px;">La comunicaci&oacute;n con gestos: arrugar el entrecejo mientras se dice</p>
-          <p style="padding-left: 60px;">&ldquo;estoy enfadado&rdquo;</p>
-          <p><strong>Acentuar: </strong></p>
-          <p style="padding-left: 30px;">Saltar al aire mientras se dice</p>
-          <p style="padding-left: 60px;">&ldquo;&iexcl;estoy feliz!&rdquo;</p>
-          <p><strong>Regular: </strong></p>
-          <p style="padding-left: 30px;">Los flujos comunicativos, por ejemplo mediante las manos</p>
+           <h2 class="my_title">CLASIFICACIÓN DE LA COMUNICACIÓN NO VERBAL</h2>
+           <div class="my_bodytext">
+            <p><strong>Movimientos del cuerpo o </strong><strong>cin&eacute;sicos</strong><strong>:</strong></p>
+            <p style="padding-left: 30px;">Emblemas: traducen las frases --&gt; hacer &ldquo;no&rdquo; con el dedo</p>
+            <p style="padding-left: 30px;">Ilustradores: refuerzan lo que se dice &ldquo;&iexcl;que no!&rdquo;</p>
+            <p style="padding-left: 30px;">Muestras de afecto: acompa&ntilde;an a los estados afectivos --&gt; tirar un beso</p>
+            <p style="padding-left: 30px;">Reguladores: en una interacci&oacute;n, dan pi&eacute; para que el otro intervenga</p>
+            <p style="padding-left: 30px;">Adaptadores: a las necesidades del momento</p>
+            <p><strong>Caracter&iacute;sticas f&iacute;sicas: atracci&oacute;n, olor, altura, colores, temperatura</strong></p>
+            <p><strong>Conducta t&aacute;ctil</strong></p>
+            <p>&nbsp;</p>
+            <p><strong>Paralenguaje</strong>&nbsp;--&gt;<strong>&nbsp;c&oacute;mo se dicen las cosas:</strong></p>
+            <p style="padding-left: 30px;">Cualidades de la voz: registro, intensidad</p>
+            <p style="padding-left: 30px;">Vocalizaciones: pronunciar todas las letras diferenciadas</p>
+            <p style="padding-left: 30px;">Segregaciones vocales: evitar las coletillas tales como &ldquo;uhm&hellip;&rdquo;</p>
+            <p><strong>Prox&eacute;mica</strong>&nbsp;--&gt;<strong>&nbsp;percepci&oacute;n del espacio personal y social. Territorialidad</strong></p>
+            <p><strong>Artefactos: manipulaci&oacute;n de objetos: gafas, ropa, pelo&hellip;</strong></p>
+            <p>&nbsp;</p>
+            <p><strong>Repetir lo que se dice verbalmente: </strong></p>
+            <p style="padding-left: 30px;">Se&ntilde;alar mientras se dice algo:</p>
+            <p style="padding-left: 60px;">&ldquo;Ah&iacute; est&aacute; el norte&rdquo;</p>
+            <p><strong>Contradecir:</strong></p>
+            <p style="padding-left: 30px;">Gritar con mal car&aacute;cter mientras se dice</p>
+            <p style="padding-left: 60px;">&nbsp;&ldquo;&iexcl;Te quiero!&rdquo;</p>
+            <p><strong>Sustituir:</strong></p>
+            <p style="padding-left: 30px;">Cambiar frases por gestos, como por ejemplo chistar para hacer guardar&nbsp; silencio</p>
+            <p><strong>Complementar: </strong></p>
+            <p style="padding-left: 30px;">La comunicaci&oacute;n con gestos: arrugar el entrecejo mientras se dice</p>
+            <p style="padding-left: 60px;">&ldquo;estoy enfadado&rdquo;</p>
+            <p><strong>Acentuar: </strong></p>
+            <p style="padding-left: 30px;">Saltar al aire mientras se dice</p>
+            <p style="padding-left: 60px;">&ldquo;&iexcl;estoy feliz!&rdquo;</p>
+            <p><strong>Regular: </strong></p>
+            <p style="padding-left: 30px;">Los flujos comunicativos, por ejemplo mediante las manos</p>
+          </div>
 
         </div><!--content-->
 
@@ -529,10 +553,11 @@
         </figure>
 
         <div class="content">
-          <p>DISTANCIAS ZONALES</p>
+           <h2 class="my_title">ESQUEMAS CORPORALES</h2>
+          <p class="my_subtitle">DISTANCIAS ZONALES</p>
 
           <figure>
-            <img src="imagenes/esquemas/distancias.png" alt=""/>
+            <img src="imagenes/esquemas/distancias.jpg" alt=""/>
           </figure>
         </div><!--content-->
 
@@ -566,224 +591,239 @@
         </figure>
 
         <div class="content">
-          <p><strong>EL TERRITORIO Y SU ESPACIO</strong></p>
-          <p><em>&ldquo;EL USO QUE HACEMOS DE NUESTRO ESPACIO PUEDE AFECTAR DRAM&Aacute;TICAMENTE PARA CONSEGUIR UNA ADECUADA COMUNICACI&Oacute;N, SEG&Uacute;N SE TRATE DE UN ROMANCE, CONVERSACI&Oacute;N O AGRESI&Oacute;N&rdquo;</em></p>
-          <p>&nbsp;&nbsp;</p>
-          <p><strong>Invasi&oacute;n y defensa</strong></p>
-          <p>1. Tipos de invasi&oacute;n:</p>
-          <p style="padding-left: 30px;">A) Violaci&oacute;n: uso irrespetuoso. Puede hacerse con la vista</p>
-          <p style="padding-left: 30px;">B) Invasi&oacute;n: m&aacute;s abarcadora y permanente</p>
-          <p style="padding-left: 30px;">C) Contaminaci&oacute;n: profanaci&oacute;n del territorio con lo que dejamos o producimos.</p>
-          <p>2. Defensa suscitada seg&uacute;n:</p>
-          <p style="padding-left: 30px;">A) quien invada</p>
-          <p style="padding-left: 30px;">B) las razones para hacerlo</p>
-          <p style="padding-left: 30px;">C) de qu&eacute; territorio se trata: personal, familiar</p>
-          <p style="padding-left: 30px;">D) c&oacute;mo se realiz&oacute; la invasi&oacute;n</p>
-          <p style="padding-left: 30px;">E) cu&aacute;nto tiempo dur&oacute;</p>
-          <p style="padding-left: 30px;">F) d&oacute;nde tuvo lugar</p>
-          <p>3. Formas de defensa:</p>
-          <p style="padding-left: 30px;">A) prevenci&oacute;n: marcar el sitio para que los dem&aacute;s lo reconozcan</p>
-          <p style="padding-left: 30px;">B) reacci&oacute;n</p>
+           <h2 class="my_title">ÁREAS DE LA COMUNICACIÓN NO VERBAL</h2>
+          <p class="my_subtitle"><strong>EL TERRITORIO Y SU ESPACIO</strong></p>
 
+          <div class="my_bodytext">
+            <p><em>&ldquo;EL USO QUE HACEMOS DE NUESTRO ESPACIO PUEDE AFECTAR DRAM&Aacute;TICAMENTE PARA CONSEGUIR UNA ADECUADA COMUNICACI&Oacute;N, SEG&Uacute;N SE TRATE DE UN ROMANCE, CONVERSACI&Oacute;N O AGRESI&Oacute;N&rdquo;</em></p>
+            <p>&nbsp;&nbsp;</p>
+            <p class="my_subtitle"><strong>Invasi&oacute;n y defensa</strong></p>
+            <p>Tipos de invasi&oacute;n:</p>
 
-          <p><strong>LOS GESTOS</strong></p>
-          <p><strong>1. Definici&oacute;n: </strong></p>
-          <p>Cualquier acci&oacute;n que env&iacute;a un est&iacute;mulo visual a un observador.</p>
-          <p>Para llegar a ser un gesto, un acto tiene que ser&nbsp; visto por alg&uacute;n otro y tiene que comunicarle alguna pieza de informaci&oacute;n.</p>
-          <p><strong>El rostro de una persona puede proporcionar:</strong></p>
-          <ul>
-            <li>Un continuo comentario sobre sus reacciones ante lo que est&aacute; diciendo, (sorpresa, incredulidad, acuerdo, disgusto, irritaci&oacute;n, etc)</li>
-            <li>Se puede averiguar mucho sobre los sentimientos</li>
-            <li>Otras partes del cuerpo, dan tambi&eacute;n informaci&oacute;n</li>
-          </ul>
-          <p>&nbsp;</p>
-          <p><strong>2. Finalidad de los gestos:</strong></p>
-          <p style="padding-left: 30px;"><strong>1. Comunicar informaci&oacute;n:</strong> empleamos los gestos como sustitutivos de&nbsp; palabras.</p>
-          <p style="padding-left: 30px;"><em>Por ejemplo, una mano alzada para saludar</em></p>
-          <p style="padding-left: 30px;"><strong>2. Comunicar emociones:</strong> nos tocamos la cara ante la ansiedad, frotamos nuestras manos cuando estamos nerviosos, aplaudimos ante la complacencia, etc.</p>
-          <p style="padding-left: 30px;"><strong>3. Confirmar lo que decimos oralmente,</strong> nos ayuda a sincronizar la conversaci&oacute;n</p>
-          <p style="padding-left: 30px;"><em>Cuando levantamos la mano con la palma hacia</em> <em>arriba estamos invitando a hablar a la otra persona</em></p>
-          <ol start="4">
-            <li><strong> Expresar la propia imagen,</strong> nuestra personalidad est&aacute; continuamente transmiti&eacute;ndose a trav&eacute;s de nuestros gestos:
-              <ul>
-                <li>Una personalidad extrovertida utilizar&aacute; gestos amplios y en&eacute;rgicos</li>
-                <li>Una persona t&iacute;mida gesticular&aacute; menos.</li>
-              </ul>
-            </li>
-          </ol>
+<ul>
+            <li style="padding-left: 30px;">Violaci&oacute;n: uso irrespetuoso. Puede hacerse con la vista</li>
+            <li style="padding-left: 30px;">Invasi&oacute;n: m&aacute;s abarcadora y permanente</li>
+            <li style="padding-left: 30px;">Contaminaci&oacute;n: profanaci&oacute;n del territorio con lo que dejamos o producimos.</li>
+            </ul>
 
-
-          <p><strong>EXPRESI&Oacute;N FACIAL</strong></p>
-          <p><strong>1. Definici&oacute;n: </strong></p>
-          <p>Comprender las emociones es crucial para:</p>
-          <ul>
-            <li>El bienestar personal</li>
-            <li>Para las relaciones interpersonales</li>
-            <li>Para tener &eacute;xito en muchas profesiones.</li>
-          </ul>
-          <p>La cara es el principal sistema de se&ntilde;ales para mostrar las emociones</p>
-          <p>Es el &aacute;rea corporal que m&aacute;s de cerca se observa durante la interacci&oacute;n</p>
-          <p>Las conductas habilidosas requieren una expresi&oacute;n facial que est&eacute; de acuerdo con el mensaje.</p>
-          <p style="padding-left: 30px;"><em>Si se tiene una expresi&oacute;n facial de miedo o de enfado al conversar, no es probable que tenga &eacute;xito</em></p>
-          <p style="padding-left: 30px;">&nbsp;</p>
-          <p><strong>2.- Estilos inapropiados de expresiones faciales:</strong></p>
-          <ol>
-            <li><strong> Retra&iacute;dos</strong>: la expresi&oacute;n facial no var&iacute;a y muestran poca o ninguna expresi&oacute;n</li>
-            <li><strong> Reveladores:</strong> revela todo lo que est&aacute; sintiendo por medio de sus expresiones faciales</li>
-            <li><strong>Expresores</strong><strong> sustitutos:</strong> muestran una expresi&oacute;n cuando piensan que est&aacute;n mostrando otra</li>
-            <li><strong>Expresores</strong><strong> de afecto congelado:</strong> muestra una emoci&oacute;n incluso cuando no sienten ninguna</li>
-          </ol>
-          <p style="padding-left: 30px;"><em>Por ejemplo: la sonrisa congelada</em></p>
-          <ol start="5">
-            <li><strong>Expresores</strong><strong> siempre preparados:</strong> inicialmente muestra una clase de emoci&oacute;n para todos los acontecimientos,</li>
-          </ol>
-          <p style="padding-left: 30px;">&nbsp; P<em>or ejemplo, pareciendo siempre sorprendido cuando otra persona habla primero</em></p>
-
-
-          <p><strong>MIRADA</strong></p>
-          <p><strong>1. Definici&oacute;n:</strong></p>
-          <p><strong>Fijarse en otra persona en o entre los ojos, o, m&aacute;s generalmente, en la mitad superior de la cara</strong></p>
-          <ul>
-            <li>La mirada mutua implica que se ha hecho &ldquo;un contacto ocular" con otra persona</li>
-            <li></li>
-            <li>Durante la interacci&oacute;n social, la gente mira a los dem&aacute;s a los ojos, repetidamente, pero por cortos per&iacute;odos</li>
-            <li></li>
-            <li>La gente mira m&aacute;s mientras escucha que mientras habla (75 por 100 y 40 por 100, respectivamente)</li>
-            <li></li>
-            <li>Con un contacto ocular general del 30 por 100, empleando miradas de 1 a 10 segundos de duraci&oacute;n.</li>
-          </ul>
-          <p><strong>2. Expresi&oacute;n de las miradas</strong></p>
-          <p style="padding-left: 30px;"><strong>1. Actitudes:</strong></p>
-          <ul>
-            <li style="padding-left: 30px;">La gente que mira mas es vista m&aacute;s agradable</li>
-            <li style="padding-left: 30px;">La forma extrema de mirada fija es vista como hostil y/o dominante</li>
-            <li style="padding-left: 30px;">Ciertas interacciones tienen m&aacute;s significados
-              <ul>
-                <li style="padding-left: 30px;"><em>Por ejemplo, dejar de mirar el primero es se&ntilde;al de sumisi&oacute;n</em></li>
-                <li style="padding-left: 30px;"><em>La dilataci&oacute;n pupilar se&ntilde;ala inter&eacute;s por el otro</em></li>
-              </ul>
-            </li>
-          </ul>
-          <p style="padding-left: 30px;"><strong>2. Emociones:</strong></p>
-          <ul>
-            <li style="padding-left: 30px;">El mirar mas intensifica la impresi&oacute;n de algunas emociones, como la ira</li>
-            <li style="padding-left: 30px;">El mirar menos intensifica otras, como la verg&uuml;enza</li>
-          </ul>
-          <p>&nbsp;</p>
-          <p style="padding-left: 30px;"><strong>3. compa&ntilde;amiento del habla:</strong></p>
-          <p style="padding-left: 30px;">Para sincronizar, acompa&ntilde;ar o comentar la palabra hablada. En general</p>
-          <ul>
-            <li style="padding-left: 30px;">Si el oyente mira m&aacute;s produce m&aacute;s respuesta por parte del que habla</li>
-            <li style="padding-left: 30px;">Si el que habla mira m&aacute;s es visto como mas persuasivo y seguro.</li>
+            <p>Defensa suscitada seg&uacute;n:</p>
+            <ul>
+            <li style="padding-left: 30px;">Quien invada</li>
+            <li style="padding-left: 30px;">Las razones para hacerlo</li>
+            <li style="padding-left: 30px;">De qu&eacute; territorio se trata: personal, familiar</li>
+            <li style="padding-left: 30px;">C&oacute;mo se realiz&oacute; la invasi&oacute;n</li>
+            <li style="padding-left: 30px;">Cu&aacute;nto tiempo dur&oacute;</li>
+            <li style="padding-left: 30px;">D&oacute;nde tuvo lugar</li>
           </ul>
 
-
-          <p><strong>SONRISA</strong></p>
-          <p><strong>1. Definici&oacute;n:</strong></p>
-          <ul>
-            <li>Tiene un gran poder comunicador ya sea presencial como telef&oacute;nica.</li>
-            <li>Es un rasgo f&iacute;sico de nuestro comportamiento</li>
-            <li>Es una mueca de nuestros labios. Pero est&aacute; transmitiendo mucha informaci&oacute;n.</li>
-            <li>Ver una sonrisa nos hace suponer que el otro tiene una actitud positiva, amable y servicial hacia nosotros.</li>
-            <li>Se supone que est&aacute;n receptivos y dispuestos a ayudarnos en cualquier cosa y adem&aacute;s de manera cordial</li>
-          </ul>
-          <p><strong>2. Significados:</strong></p>
-          <ul>
-            <li>Puede servir corno un gesto de pacificaci&oacute;n en respuesta a una amenaza real o percibida</li>
-            <li>Como una se&ntilde;al de placer</li>
-            <li>Para trasmitir el hecho de que a una persona le gusta otra</li>
-            <li>Una sonrisa puede suavizar un rechazo</li>
-            <li>Comunicar una actitud amistosa</li>
-            <li>Animar a que te devuelvan la sonrisa</li>
-          </ul>
-          <p>&nbsp;</p>
-
-
-          <p><strong>SILENCIO</strong></p>
-          <p><strong>1. Definici&oacute;n: </strong></p>
-          <ul>
-            <li>Es una poderosa herramienta de comunicaci&oacute;n, pero hay que saber utilizarla con habilidad</li>
-            <li>Cuando alguien nos hace una pregunta y nos callamos, estamos comunicando algo</li>
-            <li>Cuando un orador termina su exposici&oacute;n abre el turno de preguntas y se hace el silencio, el p&uacute;blico est&aacute; tambi&eacute;n comunicando algo.</li>
-          </ul>
-          <p><strong>2. Mediante el silencio:</strong></p>
-          <ul>
-            <li>Podemos alentar a que nuestro interlocutor comience o contin&uacute;e hablando</li>
-            <li>Mostramos inter&eacute;s por lo que nos est&aacute; expresando</li>
-            <li>Conseguimos informaci&oacute;n de nuestro interlocutor</li>
-            <li>Acentuamos palabras importantes y hacemos hincapi&eacute; en ciertas parte de nuestro mensaje.</li>
+            <p>Formas de defensa:</p>
+            <ul>
+            <li style="padding-left: 30px;">Prevenci&oacute;n: marcar el sitio para que los dem&aacute;s lo reconozcan</li>
+            <li style="padding-left: 30px;">Reacci&oacute;n</li>
           </ul>
 
+<br><br>
+            <p class="my_subtitle"><strong>LOS GESTOS</strong></p>
+            <p><strong>Definici&oacute;n: </strong></p>
 
-          <p><strong>APARIENCIA PERSONAL</strong></p>
-          <p><strong>1. Definici&oacute;n. </strong></p>
-          <p>Se refiere al aspecto exterior de una persona. Las primeras impresiones son las importantes</p>
-          <p><strong>2. El atractivo. </strong></p>
-          <ul>
-            <li>Aumenta la credibilidad inicial y por tanto su poder de persuasi&oacute;n</li>
-            <li>En la mujer ideal los varones lo valoran en un 47 % frente al 29 % de las mujeres en los varones</li>
-          </ul>
-          <p><strong>3.- Tipolog&iacute;as</strong></p>
-          <p><strong>4.- Olor: </strong></p>
-          <p>Puede acercar o rechazar</p>
-          <p><strong>5.- Pelo en el cuerpo:</strong></p>
-          <p>Depende del sexo y de la cultura</p>
-          <p><strong>6.- Ropa y apariencia</strong></p>
+            <p>Cualquier acci&oacute;n que env&iacute;a un est&iacute;mulo visual a un observador.</p>
+            <p>Para llegar a ser un gesto, un acto tiene que ser&nbsp; visto por alg&uacute;n otro y tiene que comunicarle alguna pieza de informaci&oacute;n.</p>
+            <p><strong>El rostro de una persona puede proporcionar:</strong></p>
+            <ul>
+              <li>Un continuo comentario sobre sus reacciones ante lo que est&aacute; diciendo, (sorpresa, incredulidad, acuerdo, disgusto, irritaci&oacute;n, etc)</li>
+              <li>Se puede averiguar mucho sobre los sentimientos</li>
+              <li>Otras partes del cuerpo, dan tambi&eacute;n informaci&oacute;n</li>
+            </ul>
+            <p>&nbsp;</p>
+            <p><strong>Finalidad de los gestos:</strong></p>
+            <p style="padding-left: 30px;"><strong>Comunicar informaci&oacute;n:</strong> empleamos los gestos como sustitutivos de&nbsp; palabras.</p>
+            <p style="padding-left: 30px;"><em>Por ejemplo, una mano alzada para saludar</em></p>
+            <p style="padding-left: 30px;"><strong>Comunicar emociones:</strong> nos tocamos la cara ante la ansiedad, frotamos nuestras manos cuando estamos nerviosos, aplaudimos ante la complacencia, etc.</p>
+            <p style="padding-left: 30px;"><strong>Confirmar lo que decimos oralmente,</strong> nos ayuda a sincronizar la conversaci&oacute;n</p>
+            <p style="padding-left: 30px;"><em>Cuando levantamos la mano con la palma hacia</em> <em>arriba estamos invitando a hablar a la otra persona</em></p>
+            
+              <p style="padding-left: 30px;"><strong> Expresar la propia imagen,</strong> nuestra personalidad est&aacute; continuamente transmiti&eacute;ndose a trav&eacute;s de nuestros gestos:
+                
+                  <li>Una personalidad extrovertida utilizar&aacute; gestos amplios y en&eacute;rgicos</li>
+                  <li>Una persona t&iacute;mida gesticular&aacute; menos.</li>
+
+                  </p>
+                
+              
+
+<br><br>
+            <p class="my_subtitle"><strong>EXPRESI&Oacute;N FACIAL</strong></p>
+            <p><strong>Definici&oacute;n: </strong></p>
+            <p>Comprender las emociones es crucial para:</p>
+            <ul>
+              <li>El bienestar personal</li>
+              <li>Para las relaciones interpersonales</li>
+              <li>Para tener &eacute;xito en muchas profesiones.</li>
+            </ul>
+            <p>La cara es el principal sistema de se&ntilde;ales para mostrar las emociones</p>
+            <p>Es el &aacute;rea corporal que m&aacute;s de cerca se observa durante la interacci&oacute;n</p>
+            <p>Las conductas habilidosas requieren una expresi&oacute;n facial que est&eacute; de acuerdo con el mensaje.</p>
+            <p style="padding-left: 30px;"><em>Si se tiene una expresi&oacute;n facial de miedo o de enfado al conversar, no es probable que tenga &eacute;xito</em></p>
+            <p style="padding-left: 30px;">&nbsp;</p>
+            <p><strong>2.- Estilos inapropiados de expresiones faciales:</strong></p>
+            <ol>
+              <li><strong> Retra&iacute;dos</strong>: la expresi&oacute;n facial no var&iacute;a y muestran poca o ninguna expresi&oacute;n</li>
+              <li><strong> Reveladores:</strong> revela todo lo que est&aacute; sintiendo por medio de sus expresiones faciales</li>
+              <li><strong>Expresores</strong><strong> sustitutos:</strong> muestran una expresi&oacute;n cuando piensan que est&aacute;n mostrando otra</li>
+              <li><strong>Expresores</strong><strong> de afecto congelado:</strong> muestra una emoci&oacute;n incluso cuando no sienten ninguna</li>
+            </ol>
+            <p style="padding-left: 30px;"><em>Por ejemplo: la sonrisa congelada</em></p>
+            <ol start="5">
+              <li><strong>Expresores</strong><strong> siempre preparados:</strong> inicialmente muestra una clase de emoci&oacute;n para todos los acontecimientos,</li>
+            </ol>
+            <p style="padding-left: 30px;">&nbsp; P<em>or ejemplo, pareciendo siempre sorprendido cuando otra persona habla primero</em></p>
 
 
-          <p><strong>POSTURA CORPORAL</strong></p>
-          <p><strong>1.&nbsp;</strong><strong>Definici&oacute;n:</strong></p>
-          <ul>
-            <li>Expresa las actitudes y sentimientos hacia las personas que nos acompa&ntilde;an</li>
-            <li>Nos puede hablar de su pasado</li>
-            <li>A veces se llega a afirmar que los problemas psicol6gicos personales llegan a incrustarse en la estructura corporal.</li>
-          </ul>
-          <p><strong>2.&nbsp;</strong><strong>Expresi&oacute;n de la postura corporal:</strong></p>
-          <ol>
-            <li><u><strong>Actitudes</strong></u><strong>:</strong>
-              <ul>
-                <li>Un conjunto de posiciones que reducen la distancia y aumentan la apertura hacia el otro son c&aacute;lidas, amigables, &iacute;ntimas, etc.</li>
-                <li>Las posiciones &ldquo;c&aacute;lidas" incluyen:
-                  <ul>
-                    <li>El inclinarse hacia delante</li>
-                    <li>Brazos y piernas abiertos</li>
-                    <li>Manos extendidas hacia el otro</li>
-                  </ul>
-                </li>
-                <li>Otras posiciones que indican actitudes, abarcan:
-                  <ul>
-                    <li>Apoyarse hacia atr&aacute;s</li>
-                    <li>Manos entrelazadas que sostienen la parte posterior de la cabeza = dominancia o sorpresa</li>
-                    <li>Brazos en jarras, inclinaci&oacute;n lateral = determinaci&oacute;n.</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><u><strong>Emociones:</strong></u>
-              <ul>
-                <li>Existe evidencia de que la postura puede comunicar emociones espec&iacute;ficas, incluyendo:
-                  <ul>
-                    <li>Hombros encogidos, brazos erguidos, manos extendidas = indiferencia</li>
-                    <li>Inclinaci&oacute;n hacia adelante, brazos extendidos, pu&ntilde;os apretados = ira</li>
-                    <li>Varias clases de movimientos p&eacute;lvicos, el cruzar y descruzar las piernas (en las mujeres) = flirtear</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p><u><strong>Acompa&ntilde;amiento del habla:</strong></u></p>
-              <ul>
-                <li>
-                  <p>Los cambios importantes de la postura se emplean para:</p>
-                  <ul>
-                    <li>Marcar amplias unidades del habla, como en los cambios de tema</li>
-                    <li>Para dar &eacute;nfasis</li>
-                    <li>Para se&ntilde;alar el tomar o el ceder la palabra</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ol>
+            <p><strong>MIRADA</strong></p>
+            <p><strong>1. Definici&oacute;n:</strong></p>
+            <p><strong>Fijarse en otra persona en o entre los ojos, o, m&aacute;s generalmente, en la mitad superior de la cara</strong></p>
+            <ul>
+              <li>La mirada mutua implica que se ha hecho &ldquo;un contacto ocular" con otra persona</li>
+              <li></li>
+              <li>Durante la interacci&oacute;n social, la gente mira a los dem&aacute;s a los ojos, repetidamente, pero por cortos per&iacute;odos</li>
+              <li></li>
+              <li>La gente mira m&aacute;s mientras escucha que mientras habla (75 por 100 y 40 por 100, respectivamente)</li>
+              <li></li>
+              <li>Con un contacto ocular general del 30 por 100, empleando miradas de 1 a 10 segundos de duraci&oacute;n.</li>
+            </ul>
+            <p><strong>2. Expresi&oacute;n de las miradas</strong></p>
+            <p style="padding-left: 30px;"><strong>1. Actitudes:</strong></p>
+            <ul>
+              <li style="padding-left: 30px;">La gente que mira mas es vista m&aacute;s agradable</li>
+              <li style="padding-left: 30px;">La forma extrema de mirada fija es vista como hostil y/o dominante</li>
+              <li style="padding-left: 30px;">Ciertas interacciones tienen m&aacute;s significados
+                <ul>
+                  <li style="padding-left: 30px;"><em>Por ejemplo, dejar de mirar el primero es se&ntilde;al de sumisi&oacute;n</em></li>
+                  <li style="padding-left: 30px;"><em>La dilataci&oacute;n pupilar se&ntilde;ala inter&eacute;s por el otro</em></li>
+                </ul>
+              </li>
+            </ul>
+            <p style="padding-left: 30px;"><strong>2. Emociones:</strong></p>
+            <ul>
+              <li style="padding-left: 30px;">El mirar mas intensifica la impresi&oacute;n de algunas emociones, como la ira</li>
+              <li style="padding-left: 30px;">El mirar menos intensifica otras, como la verg&uuml;enza</li>
+            </ul>
+            <p>&nbsp;</p>
+            <p style="padding-left: 30px;"><strong>3. compa&ntilde;amiento del habla:</strong></p>
+            <p style="padding-left: 30px;">Para sincronizar, acompa&ntilde;ar o comentar la palabra hablada. En general</p>
+            <ul>
+              <li style="padding-left: 30px;">Si el oyente mira m&aacute;s produce m&aacute;s respuesta por parte del que habla</li>
+              <li style="padding-left: 30px;">Si el que habla mira m&aacute;s es visto como mas persuasivo y seguro.</li>
+            </ul>
+
+
+            <p><strong>SONRISA</strong></p>
+            <p><strong>1. Definici&oacute;n:</strong></p>
+            <ul>
+              <li>Tiene un gran poder comunicador ya sea presencial como telef&oacute;nica.</li>
+              <li>Es un rasgo f&iacute;sico de nuestro comportamiento</li>
+              <li>Es una mueca de nuestros labios. Pero est&aacute; transmitiendo mucha informaci&oacute;n.</li>
+              <li>Ver una sonrisa nos hace suponer que el otro tiene una actitud positiva, amable y servicial hacia nosotros.</li>
+              <li>Se supone que est&aacute;n receptivos y dispuestos a ayudarnos en cualquier cosa y adem&aacute;s de manera cordial</li>
+            </ul>
+            <p><strong>2. Significados:</strong></p>
+            <ul>
+              <li>Puede servir corno un gesto de pacificaci&oacute;n en respuesta a una amenaza real o percibida</li>
+              <li>Como una se&ntilde;al de placer</li>
+              <li>Para trasmitir el hecho de que a una persona le gusta otra</li>
+              <li>Una sonrisa puede suavizar un rechazo</li>
+              <li>Comunicar una actitud amistosa</li>
+              <li>Animar a que te devuelvan la sonrisa</li>
+            </ul>
+            <p>&nbsp;</p>
+
+
+            <p><strong>SILENCIO</strong></p>
+            <p><strong>1. Definici&oacute;n: </strong></p>
+            <ul>
+              <li>Es una poderosa herramienta de comunicaci&oacute;n, pero hay que saber utilizarla con habilidad</li>
+              <li>Cuando alguien nos hace una pregunta y nos callamos, estamos comunicando algo</li>
+              <li>Cuando un orador termina su exposici&oacute;n abre el turno de preguntas y se hace el silencio, el p&uacute;blico est&aacute; tambi&eacute;n comunicando algo.</li>
+            </ul>
+            <p><strong>2. Mediante el silencio:</strong></p>
+            <ul>
+              <li>Podemos alentar a que nuestro interlocutor comience o contin&uacute;e hablando</li>
+              <li>Mostramos inter&eacute;s por lo que nos est&aacute; expresando</li>
+              <li>Conseguimos informaci&oacute;n de nuestro interlocutor</li>
+              <li>Acentuamos palabras importantes y hacemos hincapi&eacute; en ciertas parte de nuestro mensaje.</li>
+            </ul>
+
+
+            <p><strong>APARIENCIA PERSONAL</strong></p>
+            <p><strong>1. Definici&oacute;n. </strong></p>
+            <p>Se refiere al aspecto exterior de una persona. Las primeras impresiones son las importantes</p>
+            <p><strong>2. El atractivo. </strong></p>
+            <ul>
+              <li>Aumenta la credibilidad inicial y por tanto su poder de persuasi&oacute;n</li>
+              <li>En la mujer ideal los varones lo valoran en un 47 % frente al 29 % de las mujeres en los varones</li>
+            </ul>
+            <p><strong>3.- Tipolog&iacute;as</strong></p>
+            <p><strong>4.- Olor: </strong></p>
+            <p>Puede acercar o rechazar</p>
+            <p><strong>5.- Pelo en el cuerpo:</strong></p>
+            <p>Depende del sexo y de la cultura</p>
+            <p><strong>6.- Ropa y apariencia</strong></p>
+
+
+            <p><strong>POSTURA CORPORAL</strong></p>
+            <p><strong>1.&nbsp;</strong><strong>Definici&oacute;n:</strong></p>
+            <ul>
+              <li>Expresa las actitudes y sentimientos hacia las personas que nos acompa&ntilde;an</li>
+              <li>Nos puede hablar de su pasado</li>
+              <li>A veces se llega a afirmar que los problemas psicol6gicos personales llegan a incrustarse en la estructura corporal.</li>
+            </ul>
+            <p><strong>2.&nbsp;</strong><strong>Expresi&oacute;n de la postura corporal:</strong></p>
+            <ol>
+              <li><u><strong>Actitudes</strong></u><strong>:</strong>
+                <ul>
+                  <li>Un conjunto de posiciones que reducen la distancia y aumentan la apertura hacia el otro son c&aacute;lidas, amigables, &iacute;ntimas, etc.</li>
+                  <li>Las posiciones &ldquo;c&aacute;lidas" incluyen:
+                    <ul>
+                      <li>El inclinarse hacia delante</li>
+                      <li>Brazos y piernas abiertos</li>
+                      <li>Manos extendidas hacia el otro</li>
+                    </ul>
+                  </li>
+                  <li>Otras posiciones que indican actitudes, abarcan:
+                    <ul>
+                      <li>Apoyarse hacia atr&aacute;s</li>
+                      <li>Manos entrelazadas que sostienen la parte posterior de la cabeza = dominancia o sorpresa</li>
+                      <li>Brazos en jarras, inclinaci&oacute;n lateral = determinaci&oacute;n.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><u><strong>Emociones:</strong></u>
+                <ul>
+                  <li>Existe evidencia de que la postura puede comunicar emociones espec&iacute;ficas, incluyendo:
+                    <ul>
+                      <li>Hombros encogidos, brazos erguidos, manos extendidas = indiferencia</li>
+                      <li>Inclinaci&oacute;n hacia adelante, brazos extendidos, pu&ntilde;os apretados = ira</li>
+                      <li>Varias clases de movimientos p&eacute;lvicos, el cruzar y descruzar las piernas (en las mujeres) = flirtear</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p><u><strong>Acompa&ntilde;amiento del habla:</strong></u></p>
+                <ul>
+                  <li>
+                    <p>Los cambios importantes de la postura se emplean para:</p>
+                    <ul>
+                      <li>Marcar amplias unidades del habla, como en los cambios de tema</li>
+                      <li>Para dar &eacute;nfasis</li>
+                      <li>Para se&ntilde;alar el tomar o el ceder la palabra</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
 
         </div><!--content-->
 
