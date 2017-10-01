@@ -9075,7 +9075,7 @@ body.graphic-designer .p4-dots path {
 ----------------------------------------------------------------------*/
 /* line 3, ../sass/cospo/demos/_fashion-designer.scss */
 body.fasion-designer .main-overlay {
-  background-color: rgba(78, 171, 137, 0.9);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 @media (min-width: 992px) {
   /* line 7, ../sass/cospo/demos/_fashion-designer.scss */
@@ -9094,15 +9094,15 @@ body.fasion-designer .navigation button.navigation-btn[data-action="go-next-page
 /* line 29, ../sass/cospo/demos/_fashion-designer.scss */
 body.fasion-designer .navigation.open,
 body.fasion-designer .navigation .scales {
-  background-color: #58c7a6 !important;
+  background-color: rgba(78, 171, 137, 0.9); 
 }
 /* line 35, ../sass/cospo/demos/_fashion-designer.scss */
 body.fasion-designer .navigation .widget-overlay-bottom, body.fasion-designer .navigation .widget-overlay-top {
-  background-color: #4ebd9c !important;
+  background-color: rgba(78, 171, 137, 0.9); 
 }
 /* line 42, ../sass/cospo/demos/_fashion-designer.scss */
 body.fasion-designer .navigation .widget-lang-overlay {
-  background-color: #48af90 !important;
+  background-color: rgba(78, 171, 137, 0.9); 
 }
 
 /* Photographer
@@ -10988,4 +10988,7 @@ h6 .cospo-comment-content span {
 /* line 593, ../sass/cospo/_blog.scss */
 .log-in-form input {
   font-size: 1.143rem;
+}
+.menu_wrapper li a{
+    text-transform: capitalize;
 }
