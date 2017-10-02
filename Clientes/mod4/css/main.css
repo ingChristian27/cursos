@@ -4262,8 +4262,8 @@ div.page-figure.in-content {
   }
 
   /**
-	 * Home Page
-	 */
+   * Home Page
+   */
   /* line 736, ../sass/cospo/elements/_pages.scss */
   .home-page {
     padding: 114px 0;
@@ -4746,8 +4746,7 @@ body.dark .widget-newsletter button[type=submit]:before:hover {
 /* line 265, ../sass/cospo/elements/_navigation.scss */
 .navigation {
   position: absolute;
-  z-index: 99999;
-  z-index: 999999;
+  z-index: 300;
   top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -5207,8 +5206,8 @@ body.dark .navigation-btn[data-action='show-menu']:before, body.dark [data-actio
     -webkit-transition: opacity 0.1s ease;
     transition: opacity 0.1s ease;
     opacity: 0;
-    padding-top: 116px;
-    padding-bottom: 116px;
+    padding-top: 80px;   
+    padding-bottom: 80px;
   }
   /* line 747, ../sass/cospo/elements/_navigation.scss */
   .navigation nav .scroll {
@@ -5261,36 +5260,36 @@ body.dark .navigation-btn[data-action='show-menu']:before, body.dark [data-actio
     -webkit-transition: opacity .3s linear, -webkit-transform .3s linear;
   }
   /* line 795, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover .widget-lang,
-  .navigation.enable-hover .widget-search {
+  .navigation.enable-hover:hover .widget-lang,
+  .navigation.enable-hover:hover .widget-search {
     opacity: 1;
     visibility: visible;
   }
   /* line 801, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover .navigation-link-btn {
+  .navigation.enable-hover:hover .navigation-link-btn {
     opacity: 1;
     visibility: visible;
   }
   /* line 806, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover .navigation-link-btn2 {
+  .navigation.enable-hover:hover .navigation-link-btn2 {
     opacity: 1;
     visibility: visible;
   }
   /* line 812, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover nav .menu_wrapper {
+  .navigation.enable-hover:hover nav .menu_wrapper {
     -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     visibility: visible;
     opacity: 1;
   }
   /* line 819, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover nav .wrapper-scroll {
+  .navigation.enable-hover:hover nav .wrapper-scroll {
     -webkit-transition: opacity 0.2s 0.1s ease;
     transition: opacity 0.2s 0.1s ease;
     opacity: 1;
   }
   /* line 824, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover nav .scales {
+  .navigation.enable-hover:hover nav .scales {
     -webkit-transform: scale(1) translateZ(0.00001px);
     -ms-transform: scale(1) translateZ(0.00001px);
     transform: scale(1) translateZ(0.00001px);
@@ -5299,7 +5298,7 @@ body.dark .navigation-btn[data-action='show-menu']:before, body.dark [data-actio
 }
 @media screen and (min-width: 992px) and (-ms-high-contrast: active), screen and (min-width: 992px) and (-ms-high-contrast: none) {
   /* line 824, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover nav .scales {
+  .navigation.enable-hover:hover nav .scales {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
@@ -5307,7 +5306,7 @@ body.dark .navigation-btn[data-action='show-menu']:before, body.dark [data-actio
 }
 @media screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 0) {
   /* line 824, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover nav .scales {
+  .navigation.enable-hover:hover nav .scales {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
@@ -5315,11 +5314,11 @@ body.dark .navigation-btn[data-action='show-menu']:before, body.dark [data-actio
 }
 @media screen and (min-width: 992px) {
   /* line 835, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover nav a {
+  .navigation.enable-hover:hover nav a {
     pointer-events: auto;
   }
   /* line 839, ../sass/cospo/elements/_navigation.scss */
-  .navigation.enable-hover nav .wrapper-scroll {
+  .navigation.enable-hover:hover nav .wrapper-scroll {
     height: 100%;
     width: 100%;
     -webkit-transition: height 0s ease;
@@ -6135,7 +6134,7 @@ button[data-action="show-lang"]:before {
 }
 /* line 1604, ../sass/cospo/elements/_navigation.scss */
 .navigation nav .wrapper-scroll {
-  padding: 122px 0;
+  padding: 80px 0;
   position: relative;
   z-index: 2;
 }
@@ -6467,24 +6466,24 @@ button[data-action="show-lang"]:before {
   /* line 1910, ../sass/cospo/elements/_navigation.scss */
   .menu_wrapper .navigation-menu.carousel-menu li {
     -webkit-transform: perspective(1px) scale(0) rotate(0.02deg) translateZ(0.00001px);
-    /*-ms-transform: perspective(1px) scale(0) rotate(0.02deg) translateZ(0.00001px);
+    -ms-transform: perspective(1px) scale(0) rotate(0.02deg) translateZ(0.00001px);
     transform: perspective(1px) scale(0) rotate(0.02deg) translateZ(0.00001px);
-    opacity: 0;*/
+    opacity: 0;
   }
   /* line 1920, ../sass/cospo/elements/_navigation.scss */
   .menu_wrapper.mouse-over .navigation-menu.carousel-menu li {
-    /*opacity: 1;
+    opacity: 1;
     -webkit-transform: perspective(1px) scale(1) rotate(0.02deg) translateZ(0.00001px);
     -ms-transform: perspective(1px) scale(1) rotate(0.02deg) translateZ(0.00001px);
-    transform: perspective(1px) scale(1) rotate(0.02deg) translateZ(0.00001px);*/
+    transform: perspective(1px) scale(1) rotate(0.02deg) translateZ(0.00001px);
   }
   /* line 1924, ../sass/cospo/elements/_navigation.scss */
   .menu_wrapper.mouse-over .navigation-menu.carousel-menu li:hover {
-    /*opacity: 0.5 !important;*/
+    opacity: 0.5 !important;
   }
   /* line 1928, ../sass/cospo/elements/_navigation.scss */
   .menu_wrapper.mouse-over .navigation-menu.carousel-menu li a {
-    /*opacity: 1 !important;*/
+    opacity: 1 !important;
   }
 }
 /* Firefox rotate fix */
@@ -6541,10 +6540,9 @@ button[data-action="show-lang"]:before {
     }
     /* line 2013, ../sass/cospo/elements/_navigation.scss */
     .menu_wrapper.mouse-over .navigation-menu.carousel-menu li {
-     /* -webkit-transform: perspective(1px) scale(1) rotate(0.02deg) translateZ(0.00001px) !important;
+      -webkit-transform: perspective(1px) scale(1) rotate(0.02deg) translateZ(0.00001px) !important;
       -ms-transform: perspective(1px) scale(1) rotate(0.02deg) translateZ(0.00001px) !important;
       transform: perspective(1px) scale(1) rotate(0.02deg) translateZ(0.00001px) !important;
-      */
     }
   }
   /* End */
@@ -8090,9 +8088,9 @@ body.light .cospo-twitter ul li a:hover {
 /* line 65, ../sass/cospo/elements/_full-image.scss */
 .full-image-wrapper.onmouse-move .show-full-btn-left:before,
 .full-image-wrapper.onmouse-move .show-full-btn-right:before {
-  /*-webkit-transform: scale(0.95) translateZ(0.0005px);
+  -webkit-transform: scale(0.95) translateZ(0.0005px);
   -ms-transform: scale(0.95) translateZ(0.0005px);
-  transform: scale(0.95) translateZ(0.0005px);*/
+  transform: scale(0.95) translateZ(0.0005px);
 }
 @media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 0) {
   /* line 65, ../sass/cospo/elements/_full-image.scss */
@@ -8109,16 +8107,16 @@ body.light .cospo-twitter ul li a:hover {
 }
 /* line 76, ../sass/cospo/elements/_full-image.scss */
 .full-image-wrapper.onmouse-move .show-full-btn-close:before {
-  /*-webkit-transform: scale(0.95) translateZ(0.0005px);
+  -webkit-transform: scale(0.95) translateZ(0.0005px);
   -ms-transform: scale(0.95) translateZ(0.0005px);
-  transform: scale(0.95) translateZ(0.0005px);*/
+  transform: scale(0.95) translateZ(0.0005px);
 }
 @media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 0) {
   /* line 76, ../sass/cospo/elements/_full-image.scss */
   .full-image-wrapper.onmouse-move .show-full-btn-close:before {
-   /* -webkit-transform: scale(1);
+    -webkit-transform: scale(1);
     -ms-transform: scale(1);
-    transform: scale(1);*/
+    transform: scale(1);
   }
 }
 /* line 86, ../sass/cospo/elements/_full-image.scss */
@@ -8129,17 +8127,17 @@ body.light .cospo-twitter ul li a:hover {
 /* line 90, ../sass/cospo/elements/_full-image.scss */
 .full-image-wrapper.onmouse-over .show-full-btn-left:before,
 .full-image-wrapper.onmouse-over .show-full-btn-right:before {
-  /*-webkit-transform: scale(0.95) translateZ(0.0005px);
+  -webkit-transform: scale(0.95) translateZ(0.0005px);
   -ms-transform: scale(0.95) translateZ(0.0005px);
-  transform: scale(0.95) translateZ(0.0005px);*/
+  transform: scale(0.95) translateZ(0.0005px);
 }
 @media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 0) {
   /* line 90, ../sass/cospo/elements/_full-image.scss */
   .full-image-wrapper.onmouse-over .show-full-btn-left:before,
   .full-image-wrapper.onmouse-over .show-full-btn-right:before {
-   /* -webkit-transform: scale(1);
+    -webkit-transform: scale(1);
     -ms-transform: scale(1);
-    transform: scale(1);*/
+    transform: scale(1);
   }
 }
 /* line 98, ../sass/cospo/elements/_full-image.scss */
@@ -8148,16 +8146,16 @@ body.light .cospo-twitter ul li a:hover {
 }
 /* line 101, ../sass/cospo/elements/_full-image.scss */
 .full-image-wrapper.onmouse-over .show-full-btn-close:before {
- /* -webkit-transform: scale(0.95) translateZ(0.0005px);
+  -webkit-transform: scale(0.95) translateZ(0.0005px);
   -ms-transform: scale(0.95) translateZ(0.0005px);
-  transform: scale(0.95) translateZ(0.0005px);*/
+  transform: scale(0.95) translateZ(0.0005px);
 }
 @media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 0) {
   /* line 101, ../sass/cospo/elements/_full-image.scss */
   .full-image-wrapper.onmouse-over .show-full-btn-close:before {
-   /* -webkit-transform: scale(1);
+    -webkit-transform: scale(1);
     -ms-transform: scale(1);
-    transform: scale(1);*/
+    transform: scale(1);
   }
 }
 /* line 110, ../sass/cospo/elements/_full-image.scss */
@@ -8901,123 +8899,123 @@ body.light .ui-datepicker-header {
 /**/
 /* // Single button*/
 /* .social-likes__widget_single {*/
-/* 	margin:0;*/
+/*  margin:0;*/
 /* }*/
 /* .social-likes__button_single {*/
-/* 	padding-left:19px;*/
-/* 	background:#e2e2e2;*/
-/* 	background:linear-gradient(to bottom, #f7f7f7, #e2e2e2);*/
-/* 	color:#444;*/
-/* 	border-color:#ccc;*/
-/* 	border-color:hsla(0,0%,70%,.8);*/
-/* 	border-bottom-color:hsla(0,0%,60%,.8);*/
+/*  padding-left:19px;*/
+/*  background:#e2e2e2;*/
+/*  background:linear-gradient(to bottom, #f7f7f7, #e2e2e2);*/
+/*  color:#444;*/
+/*  border-color:#ccc;*/
+/*  border-color:hsla(0,0%,70%,.8);*/
+/*  border-bottom-color:hsla(0,0%,60%,.8);*/
 /* }*/
 /* .social-likes__button_single:hover,*/
 /* .social-likes__widget_active .social-likes__button_single {*/
-/* 	background:#f4f4f4;*/
-/* 	background:linear-gradient(to bottom, #f0f0f0, #cfcfcf);*/
-/* 	color:#222;*/
-/* 	border-color:#bbb;*/
-/* 	border-bottom-color:#9f9f9f;*/
+/*  background:#f4f4f4;*/
+/*  background:linear-gradient(to bottom, #f0f0f0, #cfcfcf);*/
+/*  color:#222;*/
+/*  border-color:#bbb;*/
+/*  border-bottom-color:#9f9f9f;*/
 /* }*/
 /* .social-likes__icon_single {*/
-/* 	background-image:embedurl('icons/single.png');*/
-/* 	background-position:2px 3px;*/
+/*  background-image:embedurl('icons/single.png');*/
+/*  background-position:2px 3px;*/
 /* }*/
 /* .social-likes__counter_single {*/
-/* 	background:#f6f6f6;*/
-/* 	border-color:#ddd;*/
+/*  background:#f6f6f6;*/
+/*  border-color:#ddd;*/
 /* }*/
 /* .social-likes__counter_single:after {*/
-/* 	border-right-color:#f6f6f6;*/
+/*  border-right-color:#f6f6f6;*/
 /* }*/
 /**/
 /* // Facebook*/
 /* .social-likes__button_facebook {*/
-/* 	// padding-left:19px;*/
-/* 	// background:#eceef5;*/
-/* 	// background:linear-gradient(to bottom, #fff, #d8def4);*/
-/* 	// color:#3b5998;*/
-/* 	// border-color:#cad4e7;*/
-/* 	// border-color:hsla(219,38%,85%,.8);*/
-/* 	// border-bottom-color:hsla(219,12%,77%,.8);*/
+/*  // padding-left:19px;*/
+/*  // background:#eceef5;*/
+/*  // background:linear-gradient(to bottom, #fff, #d8def4);*/
+/*  // color:#3b5998;*/
+/*  // border-color:#cad4e7;*/
+/*  // border-color:hsla(219,38%,85%,.8);*/
+/*  // border-bottom-color:hsla(219,12%,77%,.8);*/
 /* }*/
 /* .social-likes__button_facebook:hover {*/
-/* 	// background:#c0cdf3;*/
-/* 	// background:linear-gradient(to bottom, #f2f3f7, #c0cdf3);*/
-/* 	// color:#253860;*/
-/* 	// border-color:#b4bfd4;*/
-/* 	// border-bottom-color:#b3b7bf;*/
+/*  // background:#c0cdf3;*/
+/*  // background:linear-gradient(to bottom, #f2f3f7, #c0cdf3);*/
+/*  // color:#253860;*/
+/*  // border-color:#b4bfd4;*/
+/*  // border-bottom-color:#b3b7bf;*/
 /* }*/
 /* .social-likes__icon_facebook {*/
-/* 	// background-image:embedurl('icons/facebook.png');*/
-/* 	// background-position:3px 3px;*/
+/*  // background-image:embedurl('icons/facebook.png');*/
+/*  // background-position:3px 3px;*/
 /* }*/
 /* .social-likes__counter_facebook {*/
-/* 	// background:#f2f3f7;*/
-/* 	// border-color:#cad4e7;*/
+/*  // background:#f2f3f7;*/
+/*  // border-color:#cad4e7;*/
 /* }*/
 /* .social-likes__counter_facebook:after {*/
-/* 	// border-right-color:#f2f3f7;*/
+/*  // border-right-color:#f2f3f7;*/
 /* }*/
 /**/
 /**/
 /* // Twitter*/
 /* .social-likes__button_twitter {*/
-/* 	padding-left:19px;*/
-/* 	background:#d5e6ef;*/
-/* 	background:linear-gradient(to bottom, #fff, #d5e6ef);*/
-/* 	color:#186487;*/
-/* 	border-color:#a4cce5;*/
-/* 	border-color:hsla(203,56%,77%,.8);*/
-/* 	border-bottom-color:hsla(203,31%,71%,.8);*/
+/*  padding-left:19px;*/
+/*  background:#d5e6ef;*/
+/*  background:linear-gradient(to bottom, #fff, #d5e6ef);*/
+/*  color:#186487;*/
+/*  border-color:#a4cce5;*/
+/*  border-color:hsla(203,56%,77%,.8);*/
+/*  border-bottom-color:hsla(203,31%,71%,.8);*/
 /* }*/
 /* .social-likes__button_twitter:hover {*/
-/* 	background:#bfdfed;*/
-/* 	background:linear-gradient(to bottom, #f2f8fc, #bfdfed);*/
-/* 	color:#0b3752;*/
-/* 	border-color:#9cbbcf;*/
-/* 	border-bottom-color:#68a0c4;*/
+/*  background:#bfdfed;*/
+/*  background:linear-gradient(to bottom, #f2f8fc, #bfdfed);*/
+/*  color:#0b3752;*/
+/*  border-color:#9cbbcf;*/
+/*  border-bottom-color:#68a0c4;*/
 /* }*/
 /* .social-likes__icon_twitter {*/
-/* 	background-image:embedurl('icons/twitter.png');*/
-/* 	background-position:3px 5px;*/
+/*  background-image:embedurl('icons/twitter.png');*/
+/*  background-position:3px 5px;*/
 /* }*/
 /* .social-likes__counter_twitter {*/
-/* 	background:#f2f8fc;*/
-/* 	border-color:#a4cce5;*/
+/*  background:#f2f8fc;*/
+/*  border-color:#a4cce5;*/
 /* }*/
 /* .social-likes__counter_twitter:after {*/
-/* 	border-right-color:#f2f8fc;*/
+/*  border-right-color:#f2f8fc;*/
 /* }*/
 /**/
 /* // Google+*/
 /* .social-likes__button_plusone {*/
-/* 	padding-left:12px;*/
-/* 	background:#e4e4e4;*/
-/* 	background:linear-gradient(to bottom, #f5f5f5, #e4e4e4);*/
-/* 	color:#da573b;*/
-/* 	border-color:#bbb;*/
-/* 	border-color:hsla(0,0%,80%,.8);*/
-/* 	border-bottom-color:hsla(0,0%,70%,.8);*/
+/*  padding-left:12px;*/
+/*  background:#e4e4e4;*/
+/*  background:linear-gradient(to bottom, #f5f5f5, #e4e4e4);*/
+/*  color:#da573b;*/
+/*  border-color:#bbb;*/
+/*  border-color:hsla(0,0%,80%,.8);*/
+/*  border-bottom-color:hsla(0,0%,70%,.8);*/
 /* }*/
 /* .social-likes__button_plusone:hover {*/
-/* 	background:#f4f4f4;*/
-/* 	background:linear-gradient(to bottom, #f9f9f9, #f0f0f0);*/
-/* 	color:#cd4427;*/
-/* 	border-color:#ddd;*/
-/* 	border-bottom-color:#ccc;*/
+/*  background:#f4f4f4;*/
+/*  background:linear-gradient(to bottom, #f9f9f9, #f0f0f0);*/
+/*  color:#cd4427;*/
+/*  border-color:#ddd;*/
+/*  border-bottom-color:#ccc;*/
 /* }*/
 /* .social-likes__icon_plusone {*/
-/* 	background-image:embedurl('icons/plusone.png');*/
-/* 	background-position:0 6px;*/
+/*  background-image:embedurl('icons/plusone.png');*/
+/*  background-position:0 6px;*/
 /* }*/
 /* .social-likes__counter_plusone {*/
-/* 	background:#f9f9f9;*/
-/* 	border-color:#d2d2d2;*/
+/*  background:#f9f9f9;*/
+/*  border-color:#d2d2d2;*/
 /* }*/
 /* .social-likes__counter_plusone:after {*/
-/* 	border-right-color:#f9f9f9;*/
+/*  border-right-color:#f9f9f9;*/
 /* }*/
 /* Demos
 ----------------------------------------------------------------------*/
@@ -9095,15 +9093,15 @@ body.fasion-designer .navigation button.navigation-btn[data-action="go-next-page
 /* line 29, ../sass/cospo/demos/_fashion-designer.scss */
 body.fasion-designer .navigation.open,
 body.fasion-designer .navigation .scales {
-  background-color: rgba(78, 171, 137, 0.9); 
+  background-color: rgba(113, 183, 75, 0.74) !important;
 }
 /* line 35, ../sass/cospo/demos/_fashion-designer.scss */
 body.fasion-designer .navigation .widget-overlay-bottom, body.fasion-designer .navigation .widget-overlay-top {
-  background-color: rgba(78, 171, 137, 0.9); 
+  background-color: rgba(78, 171, 137, 0.9)  !important;
 }
 /* line 42, ../sass/cospo/demos/_fashion-designer.scss */
 body.fasion-designer .navigation .widget-lang-overlay {
-  background-color: rgba(78, 171, 137, 0.9); 
+  background-color: rgba(78, 171, 137, 0.9) !important;
 }
 
 /* Photographer
@@ -10991,6 +10989,16 @@ h6 .cospo-comment-content span {
   font-size: 1.143rem;
 }
 
-.main_home li a.clones-attack, .main_home li a{
-   text-transform: capitalize !important;
-}
+    
+ .main_home li a.clones-attack, .main_home li a{   
+    text-transform: capitalize !important;   
+ }   
+ .audio_img_wrap a {   
+     border: none;   
+ }   
+ .my_subtitle u{   
+       text-decoration-line: none;   
+ }   
+ .my_bodytext li{    
+   padding-bottom: 20px;   
+ } 
