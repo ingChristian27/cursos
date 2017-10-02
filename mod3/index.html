@@ -1110,6 +1110,25 @@ class="my_bodytext">El hombre de la izquierda est&aacute; utilizando un buen n&u
               <h6 class="my_subtitle">Recuerda:</h6>
               <br/>
 
+                        <div class="audio_img_wrap">
+            <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
+            <a href="javascript:document.getElementById('audio_R3').pause();document.getElementById('R3_play').hidden=false">
+              <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
+            </a>
+            <a href="javascript:document.getElementById('audio_R3').play();document.getElementById('R3_play').hidden=true">
+              <img id="R3_play" class="audio_play" src="imagenes/general/audio_play.png"/ >
+            </a>
+          </div>
+          <audio id="audio_R3" class="audio_control" controls>
+            <source src="audios/R3.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <script >
+          document.getElementById('audio_R3').onended = function() {
+              document.getElementById('R3_play').hidden=false;
+          };
+          </script>
+
               <div class="display-table row">
                 <div class="display-table-cell col-md-3">
                   <img src="imagenes/recuerda/recuerda.png" alt=""/>
