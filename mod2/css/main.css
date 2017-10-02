@@ -4746,8 +4746,7 @@ body.dark .widget-newsletter button[type=submit]:before:hover {
 /* line 265, ../sass/cospo/elements/_navigation.scss */
 .navigation {
   position: absolute;
-  z-index: 99999;
-  z-index: 999999;
+  z-index: 300;
   top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
@@ -10996,4 +10995,13 @@ h6 .cospo-comment-content span {
 }
 .audio_img_wrap a {
     border: none;
+}
+.my_subtitle u, .my_bodytext ul{
+      text-decoration-line: none;
+}
+.my_bodytext li{
+  padding-bottom: 20px;
+}
+.my_bodytext u {
+    text-decoration: none;
 }

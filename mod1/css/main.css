@@ -10996,3 +10996,9 @@ h6 .cospo-comment-content span {
 .audio_img_wrap a {
     border: none;
 }
+.my_subtitle u{
+      text-decoration-line: none;
+}
+.my_bodytext li{
+  padding-bottom: 20px;
+}
