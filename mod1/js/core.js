@@ -4659,7 +4659,7 @@ var NavigationCarousel = (function () {
 	}, {
 		key: 'openFullMenu',
 		value: function openFullMenu() {
-/*
+
 			if (window.innerWidth < 992) {
 				return false;
 			}
@@ -4670,7 +4670,7 @@ var NavigationCarousel = (function () {
 
 			this.isOpenFullMenu = true;
 
-			//this.navMenu.parentNode.classList.add('mouse-over');
+			this.navMenu.parentNode.classList.add('mouse-over');
 
 			if (this.liLength === this.countVisibleItem) {
 				return false;
@@ -4705,7 +4705,7 @@ var NavigationCarousel = (function () {
 				transform(this.navMenu, has3d ? 'translate3d(0, ' + -this.liPosition[tempPosition] + 'px, 0)' : 'translateY(' + -this.liPosition[tempPosition] + 'px)');
 			}
 
-			this.navMenu.parentNode.style.height = this.fullHieght + 'px';*/
+			this.navMenu.parentNode.style.height = this.fullHieght + 'px';
 		}
 
 		// hide item
@@ -4726,7 +4726,7 @@ var NavigationCarousel = (function () {
 				this.currentPosition = this.oldCurrentPosition;
 			}
 
-			//this.navMenu.parentNode.classList.remove('mouse-over');
+			this.navMenu.parentNode.classList.remove('mouse-over');
 
 			setTimeout(function () {
 
@@ -5470,28 +5470,28 @@ var FullImage = (function () {
 			};
 
 			this.buttonClose.onmouseover = function () {
-				//_this36.fullImageWrapper.classList.add('onmouse-over');
+				_this36.fullImageWrapper.classList.add('onmouse-over');
 			};
 			this.buttonClose.onmouseleave = function () {
-				//_this36.fullImageWrapper.classList.remove('onmouse-over');
+				_this36.fullImageWrapper.classList.remove('onmouse-over');
 			};
 
 			this.buttonLeft.onmouseover = function () {
-				//_this36.fullImageWrapper.classList.add('onmouse-over');
-				//_this36.fullImageWrapper.classList.add('onmouse-over-left');
+				_this36.fullImageWrapper.classList.add('onmouse-over');
+				_this36.fullImageWrapper.classList.add('onmouse-over-left');
 			};
 			this.buttonLeft.onmouseleave = function () {
-				//_this36.fullImageWrapper.classList.remove('onmouse-over');
-				//_this36.fullImageWrapper.classList.remove('onmouse-over-left');
+				_this36.fullImageWrapper.classList.remove('onmouse-over');
+				_this36.fullImageWrapper.classList.remove('onmouse-over-left');
 			};
 
 			this.buttonRight.onmouseover = function () {
-				//_this36.fullImageWrapper.classList.add('onmouse-over');
-				//_this36.fullImageWrapper.classList.add('onmouse-over-right');
+				_this36.fullImageWrapper.classList.add('onmouse-over');
+				_this36.fullImageWrapper.classList.add('onmouse-over-right');
 			};
 			this.buttonRight.onmouseleave = function () {
-				//_this36.fullImageWrapper.classList.remove('onmouse-over');
-				//_this36.fullImageWrapper.classList.remove('onmouse-over-right');
+				_this36.fullImageWrapper.classList.remove('onmouse-over');
+				_this36.fullImageWrapper.classList.remove('onmouse-over-right');
 			};
 
 			setTimeout(function () {
@@ -5500,7 +5500,7 @@ var FullImage = (function () {
 
 				_this36.fullImageWrapper.classList.add('onmouse-move');
 				setTimeout(function () {
-				//	_this36.fullImageWrapper.classList.remove('onmouse-move');
+					_this36.fullImageWrapper.classList.remove('onmouse-move');
 				}, 3000);
 			}, 0);
 		}
