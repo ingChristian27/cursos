@@ -521,3 +521,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	// onpopstate
 	// popstatePage();
 }, false);
+
+
+$("#prev-page").on('click', function(event) {
+	navCarousel.goPrev(true);
+	return false;
+});

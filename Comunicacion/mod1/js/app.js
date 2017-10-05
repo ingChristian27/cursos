@@ -523,7 +523,7 @@ document.addEventListener('DOMContentLoaded', function () {
 }, false);
 
 
-$("#prev-page").on('clik', function(event) {
+$("#prev-page").on('click', function(event) {
 	navCarousel.goPrev(true);
 	return false;
 });
