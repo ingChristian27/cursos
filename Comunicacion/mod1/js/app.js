@@ -524,6 +524,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 $("#prev-page").on('click', function(event) {
+	
 	navCarousel.goPrev(true);
 	return false;
 });
