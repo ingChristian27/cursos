@@ -4467,10 +4467,11 @@ var NavigationCarousel = (function () {
 		key: 'goPrev',
 		value: function goPrev() {
 			var isKey = arguments.length <= 0 || arguments[0] === undefined ? false : arguments[0];
-			alert("pipe sigue siendo mk")
+
 			if (!this.carouselInit) {
 				// pages.closeAjaxPage();
-				pages.nextPage();
+				//pages.nextPage();
+				pages.prevPage();
 				return false;
 			}
 

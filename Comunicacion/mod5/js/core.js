@@ -4470,7 +4470,8 @@ var NavigationCarousel = (function () {
 
 			if (!this.carouselInit) {
 				// pages.closeAjaxPage();
-				pages.nextPage();
+				//pages.nextPage();
+				pages.prevPage();
 				return false;
 			}
 

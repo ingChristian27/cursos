@@ -38,13 +38,13 @@
                     <li><a href="#objetivos-curso">Objetivos Curso</a></li>
 
                     <li><a href="#cero">INTRODUCCIÓN A LA ATENCIÓN AL CLIENTE</a></li>
-                    <li><a href="#objetivos">1. Objetivos</a></li>
+                    <li><a href="#objetivos">Objetivos</a></li>
 
-                    <li><a href="#introduccion">2. QUÉ ES LA ATENCIÓN AL CLIENTE</a></li>
-                    <li><a href="#importancia">3. IMPORTANCIA DE LA ATENCIÓN AL CLIENTE</a></li>
-                    <li><a href="#factores">4. TFACTORES DELA ATENCIÓN AL CLIENTE</a></li>
+                    <li><a href="#introduccion">QUÉ ES LA ATENCIÓN AL CLIENTE</a></li>
+                    <li><a href="#importancia">IMPORTANCIA DE LA ATENCIÓN AL CLIENTE</a></li>
+                    <li><a href="#factores">TFACTORES DELA ATENCIÓN AL CLIENTE</a></li>
 
-                    <li><a href="#recuerda">5. RECUERDA</a></li>
+                    <li><a href="#recuerda">RECUERDA</a></li>
                 </ul>
               </div>
             </div>
@@ -53,7 +53,7 @@
       </div>
       <div class="scales"></div>
     </nav>
-    <button class="navigation-btn" data-action="go-next-page">
+             <button id="navigation-next" class="navigation-btn" data-action="go-next-page">
       <svg version="1.1" id="logo_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 11 14" enable-background="new 0 0 11 14" xml:space="preserve">
         <g id="logo_copy">
           <g>
@@ -63,6 +63,16 @@
         </g>
       </svg>
     </button>
+    <button id="prev-page" class="navigation-btn" style="transform: translateY(-50%) rotateY(180deg);" data-action="go-next-page">
+    <svg version="1.1" id="logo_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 11 14" enable-background="new 0 0 11 14" xml:space="preserve">
+      <g id="logo_copy">
+        <g>
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#010101" d="M10.7,6.3C9.9,5.9,1.5,0.4,1.1,0.1C0.5-0.2,0,0.2,0,0.8
+          c0,0.4,0,11.8,0,12.4c0,0.6,0.6,0.9,1,0.7c0.6-0.4,9.1-5.9,9.6-6.2C11.1,7.4,11.1,6.6,10.7,6.3z"/>
+        </g>
+      </g>
+    </svg>
+  </button>
 
     <div class="widget-lang">
       <!--<a href="#" class="navigation-link-btn" data-action="show-lang">En</a> -->
@@ -130,6 +140,27 @@
                 <div>
                   <div class="col-md-6">
                     <h1>Atención al Cliente y Fidelización</h1>
+
+                    <div class="audio_img_wrap">
+                      <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
+            <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
+            <a href="javascript:document.getElementById('audio_A1').pause();document.getElementById('A1_play').hidden=false">
+              <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
+            </a>
+            <a href="javascript:document.getElementById('audio_A1').play();document.getElementById('A1_play').hidden=true">
+              <img id="A1_play" class="audio_play" src="imagenes/general/audio_play.png"/ >
+            </a>
+          </div>
+          <audio id="audio_A1" class="audio_control" controls>
+            <source src="audios/A1.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <script >
+          document.getElementById('audio_A1').onended = function() {
+              document.getElementById('A1_play').hidden=false;
+          };
+          </script>
+
                   </div>
                 </div>
               </div>
@@ -159,6 +190,28 @@
               <h2 class="my_title">Atención al Cliente y Fidelización</h2>
               <h6 class="my_subtitle">Los objetivos de este curso son:</h6>
               <br/>
+
+
+              <div class="audio_img_wrap">
+                <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
+            <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
+            <a href="javascript:document.getElementById('audio_A2').pause();document.getElementById('A2_play').hidden=false">
+              <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
+            </a>
+            <a href="javascript:document.getElementById('audio_A2').play();document.getElementById('A2_play').hidden=true">
+              <img id="A2_play" class="audio_play" src="imagenes/general/audio_play.png"/ >
+            </a>
+          </div>
+          <audio id="audio_A2" class="audio_control" controls>
+            <source src="audios/A2.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <script >
+          document.getElementById('audio_A2').onended = function() {
+              document.getElementById('A2_play').hidden=false;
+          };
+          </script>
+
 
               <div class="display-table row">
                 <div class="display-table-cell col-md-3">
@@ -361,6 +414,7 @@
               <br/>
 
                       <div class="audio_img_wrap">
+                        <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
             <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
             <a href="javascript:document.getElementById('audio_O1').pause();document.getElementById('O1_play').hidden=false">
               <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
@@ -581,6 +635,7 @@
 
 
         <div class="audio_img_wrap">
+          <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
             <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
             <a href="javascript:document.getElementById('audio_A3').pause();document.getElementById('A3_play').hidden=false">
               <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
@@ -631,6 +686,7 @@
               <br/>
 
             <div class="audio_img_wrap">
+              <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
             <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
             <a href="javascript:document.getElementById('audio_R1').pause();document.getElementById('R1_play').hidden=false">
               <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >

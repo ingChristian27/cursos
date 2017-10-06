@@ -26,18 +26,6 @@
   </div>
 
 
-  <button id="prev-page" class="navigation-btn" style="left:1%;transform: translateY(-50%) rotateY(180deg);" data-action="go-next-page">
-    <svg version="1.1" id="logo_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 11 14" enable-background="new 0 0 11 14" xml:space="preserve">
-      <g id="logo_copy">
-        <g>
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#010101" d="M10.7,6.3C9.9,5.9,1.5,0.4,1.1,0.1C0.5-0.2,0,0.2,0,0.8
-          c0,0.4,0,11.8,0,12.4c0,0.6,0.6,0.9,1,0.7c0.6-0.4,9.1-5.9,9.6-6.2C11.1,7.4,11.1,6.6,10.7,6.3z"/>
-        </g>
-      </g>
-    </svg>
-  </button>
-
-
   <header class="navigation">
 
     <nav>
@@ -63,7 +51,7 @@
       </div>
       <div class="scales"></div>
     </nav>
-    <button class="navigation-btn" data-action="go-next-page">
+         <button id="navigation-next" class="navigation-btn" data-action="go-next-page">
       <svg version="1.1" id="logo_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 11 14" enable-background="new 0 0 11 14" xml:space="preserve">
         <g id="logo_copy">
           <g>
@@ -73,6 +61,16 @@
         </g>
       </svg>
     </button>
+    <button id="prev-page" class="navigation-btn" style="transform: translateY(-50%) rotateY(180deg);" data-action="go-next-page">
+    <svg version="1.1" id="logo_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 11 14" enable-background="new 0 0 11 14" xml:space="preserve">
+      <g id="logo_copy">
+        <g>
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#010101" d="M10.7,6.3C9.9,5.9,1.5,0.4,1.1,0.1C0.5-0.2,0,0.2,0,0.8
+          c0,0.4,0,11.8,0,12.4c0,0.6,0.6,0.9,1,0.7c0.6-0.4,9.1-5.9,9.6-6.2C11.1,7.4,11.1,6.6,10.7,6.3z"/>
+        </g>
+      </g>
+    </svg>
+  </button>
 
     <div class="widget-lang">
       <!--<a href="#" class="navigation-link-btn" data-action="show-lang">En</a> -->
@@ -206,6 +204,7 @@
               <br/>
 
               <div class="audio_img_wrap">
+                <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
             <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
             <a href="javascript:document.getElementById('audio_O2').pause();document.getElementById('O2_play').hidden=false">
               <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
@@ -472,6 +471,7 @@
           <p class="my_subtitle"><strong>Cosas que el cliente espera en su visita:</strong></p>
 
           <div class="audio_img_wrap">
+            <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
             <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
             <a href="javascript:document.getElementById('audio_A4').pause();document.getElementById('A4_play').hidden=false">
               <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
@@ -725,43 +725,109 @@
           </div>
 
 
+<!--PEUEÑO HACK PORQUE SE ESTA DESCUADRANDO SIN UN ELEMENTO EN EL MEDIO-->
+<div style="width: 100px;visibility: hidden;">
+  <img src="imagenes/general/hand.png"/>
+</div>
+
+<!--PEQUEÑA FALLA DE CSS AQUI: SOLO SE NECESITA EN ESTE MODULO DE ESTE CURSO-->
+<style>
+  
+.bounce {
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    -moz-animation: bounce 2s infinite;
+    -o-animation: bounce 2s infinite;
+}
+ 
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+    40% {-webkit-transform: translateY(-30px);}
+    60% {-webkit-transform: translateY(-15px);}
+}
+ 
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+    40% {-moz-transform: translateY(-30px);}
+    60% {-moz-transform: translateY(-15px);}
+}
+ 
+@-o-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+    40% {-o-transform: translateY(-30px);}
+    60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}
+</style>
 
 
-
-              <figure>
-              <a data-fancybox="gallery" href="imagenes/factores/label7.jpg">
-                  <img src="imagenes/factores/label7.jpg" alt=""/>
-              </a>
-            </figure>
-
-
-          <div class="audio_img_wrap">
-            <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
-            <a href="javascript:document.getElementById('audio_A5').pause();document.getElementById('A5_play').hidden=false">
-              <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
+              <div class="audio_img_wrap" style="float:left;">
+                <!--img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" /-->
+            <img class="bounce audio_avatar" src="imagenes/general/hand.png" />
+            <a href="javascript:document.getElementById('audio_A8').pause();document.getElementById('A8_play').hidden=false">
+              <img style="left:9px;" class="audio_stop" src="imagenes/general/audio_stop.png"/ >
             </a>
-            <a href="javascript:document.getElementById('audio_A5').play();document.getElementById('A5_play').hidden=true">
-              <img id="A5_play" class="audio_play" src="imagenes/general/audio_play.png"/ >
+            <a href="javascript:document.getElementById('audio_A8').play();document.getElementById('A8_play').hidden=true">
+              <img style="left:-25px;" id="A8_play" class="audio_play" src="imagenes/general/audio_play.png"/ >
             </a>
           </div>
-          <audio id="audio_A5" class="audio_control" controls>
-            <source src="audios/A5.mp3" type="audio/mp3">
+          <audio id="audio_A8" class="audio_control" controls>
+            <source src="audios/A8.mp3" type="audio/mp3">
             Your browser does not support the audio element.
           </audio>
           <script >
-          document.getElementById('audio_A5').onended = function() {
-              document.getElementById('A5_play').hidden=false;
+          document.getElementById('audio_A8').onended = function() {
+              document.getElementById('A8_play').hidden=false;
           };
           </script>
 
 
-           <div class="audio_img_wrap">
-            <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
+              <figure style="width: 500px">
+                  <img src="imagenes/factores/1.png" alt=""/>
+            </figure>
+
+
+
+
+
+                <div class="audio_img_wrap" style="float:left;">
+                  <!--img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" /-->
+            <img class="bounce audio_avatar" src="imagenes/general/hand.png" />
+            <a href="javascript:document.getElementById('audio_A7').pause();document.getElementById('A7_play').hidden=false">
+              <img style="left:9px;" class="audio_stop" src="imagenes/general/audio_stop.png"/ >
+            </a>
+            <a href="javascript:document.getElementById('audio_A7').play();document.getElementById('A7_play').hidden=true">
+              <img style="left:-25px;" id="A7_play" class="audio_play" src="imagenes/general/audio_play.png"/ >
+            </a>
+          </div>
+          <audio id="audio_A7" class="audio_control" controls>
+            <source src="audios/A7.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <script >
+          document.getElementById('audio_A7').onended = function() {
+              document.getElementById('A7_play').hidden=false;
+          };
+          </script>
+
+              <figure style="width: 500px">
+                  <img src="imagenes/factores/2.png" alt=""/>
+            </figure>
+
+
+
+<div class="audio_img_wrap" style="float:left;">
+            <!--img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" /-->
+            <img class="bounce audio_avatar" src="imagenes/general/hand.png" />
             <a href="javascript:document.getElementById('audio_A6').pause();document.getElementById('A6_play').hidden=false">
-              <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
+              <img style="left:9px;" class="audio_stop" src="imagenes/general/audio_stop.png"/ >
             </a>
             <a href="javascript:document.getElementById('audio_A6').play();document.getElementById('A6_play').hidden=true">
-              <img id="A6_play" class="audio_play" src="imagenes/general/audio_play.png"/ >
+              <img style="left:-25px;" id="A6_play" class="audio_play" src="imagenes/general/audio_play.png"/ >
             </a>
           </div>
           <audio id="audio_A6" class="audio_control" controls>
@@ -775,44 +841,52 @@
           </script>
 
 
-             <div class="audio_img_wrap">
-            <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
-            <a href="javascript:document.getElementById('audio_A7').pause();document.getElementById('A7_play').hidden=false">
-              <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
+              <figure style="width: 500px">
+                  <img src="imagenes/factores/3.png" alt=""/>
+            </figure>
+
+
+
+
+             <div class="audio_img_wrap" style="float:left;">
+            <!--img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" /-->
+            <img class="bounce audio_avatar" src="imagenes/general/hand.png" />
+            <a href="javascript:document.getElementById('audio_A5').pause();document.getElementById('A5_play').hidden=false">
+              <img style="left:9px;" class="audio_stop" src="imagenes/general/audio_stop.png"/ >
             </a>
-            <a href="javascript:document.getElementById('audio_A7').play();document.getElementById('A7_play').hidden=true">
-              <img id="A7_play" class="audio_play" src="imagenes/general/audio_play.png"/ >
+            <a href="javascript:document.getElementById('audio_A5').play();document.getElementById('A5_play').hidden=true">
+              <img style="left:-25px;" id="A5_play" class="audio_play" src="imagenes/general/audio_play.png"/ >
             </a>
           </div>
-          <audio id="audio_A7" class="audio_control" controls>
-            <source src="audios/A7.mp3" type="audio/mp3">
+          <audio id="audio_A5" class="audio_control" controls>
+            <source src="audios/A5.mp3" type="audio/mp3">
             Your browser does not support the audio element.
           </audio>
           <script >
-          document.getElementById('audio_A7').onended = function() {
-              document.getElementById('A7_play').hidden=false;
+          document.getElementById('audio_A5').onended = function() {
+              document.getElementById('A5_play').hidden=false;
           };
           </script>
 
 
-               <div class="audio_img_wrap">
-            <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
-            <a href="javascript:document.getElementById('audio_A8').pause();document.getElementById('A8_play').hidden=false">
-              <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
-            </a>
-            <a href="javascript:document.getElementById('audio_A8').play();document.getElementById('A8_play').hidden=true">
-              <img id="A8_play" class="audio_play" src="imagenes/general/audio_play.png"/ >
-            </a>
-          </div>
-          <audio id="audio_A8" class="audio_control" controls>
-            <source src="audios/A8.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-          </audio>
-          <script >
-          document.getElementById('audio_A8').onended = function() {
-              document.getElementById('A8_play').hidden=false;
-          };
-          </script>
+             <figure style="width: 500px">
+                  <img src="imagenes/factores/4.png" alt=""/>
+            </figure>
+
+
+          
+
+
+
+ 
+
+
+
+
+           
+
+
+         
 
 
 
@@ -868,6 +942,7 @@
               <br/>
 
                           <div class="audio_img_wrap">
+                            <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
             <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
             <a href="javascript:document.getElementById('audio_R2').pause();document.getElementById('R2_play').hidden=false">
               <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >

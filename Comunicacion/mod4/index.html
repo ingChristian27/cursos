@@ -205,10 +205,27 @@
               <h6>La Sinergología</h6>
               <br/>
 
-              <audio controls>
-                <source src="audios/O4.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-              </audio>
+  
+               <div class="audio_img_wrap">
+                <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
+            <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
+            <a href="javascript:document.getElementById('audio_O4').pause();document.getElementById(O4_play').hidden=false">
+              <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
+            </a>
+            <a href="javascript:document.getElementById('audio_O4').play();document.getElementById('O4_play').hidden=true">
+              <img id="O4_play" class="audio_play" src="imagenes/general/audio_play.png"/ >
+            </a>
+          </div>
+          <audio id="audio_O4" class="audio_control" controls>
+            <source src="audios/O4.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <script >
+          document.getElementById('audio_O4').onended = function() {
+              document.getElementById('O4_play').hidden=false;
+          };
+          </script>
+
 
               <div class="display-table row">
                 <div class="display-table-cell col-md-3">
@@ -620,6 +637,7 @@
               <br/>
 
                         <div class="audio_img_wrap">
+                          <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
             <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
             <a href="javascript:document.getElementById('audio_R4').pause();document.getElementById(R4_play').hidden=false">
               <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >

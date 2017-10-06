@@ -26,18 +26,6 @@
   </div>
 
 
-  <button id="prev-page" class="navigation-btn" style="left:1%;transform: translateY(-50%) rotateY(180deg);" data-action="go-next-page">
-    <svg version="1.1" id="logo_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 11 14" enable-background="new 0 0 11 14" xml:space="preserve">
-      <g id="logo_copy">
-        <g>
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#010101" d="M10.7,6.3C9.9,5.9,1.5,0.4,1.1,0.1C0.5-0.2,0,0.2,0,0.8
-          c0,0.4,0,11.8,0,12.4c0,0.6,0.6,0.9,1,0.7c0.6-0.4,9.1-5.9,9.6-6.2C11.1,7.4,11.1,6.6,10.7,6.3z"/>
-        </g>
-      </g>
-    </svg>
-  </button>
-
-
   <header class="navigation">
 
     <nav>
@@ -65,7 +53,7 @@
       </div>
       <div class="scales"></div>
     </nav>
-    <button class="navigation-btn" data-action="go-next-page">
+             <button id="navigation-next" class="navigation-btn" data-action="go-next-page">
       <svg version="1.1" id="logo_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 11 14" enable-background="new 0 0 11 14" xml:space="preserve">
         <g id="logo_copy">
           <g>
@@ -75,6 +63,16 @@
         </g>
       </svg>
     </button>
+    <button id="prev-page" class="navigation-btn" style="transform: translateY(-50%) rotateY(180deg);" data-action="go-next-page">
+    <svg version="1.1" id="logo_copy_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 11 14" enable-background="new 0 0 11 14" xml:space="preserve">
+      <g id="logo_copy">
+        <g>
+          <path fill-rule="evenodd" clip-rule="evenodd" fill="#010101" d="M10.7,6.3C9.9,5.9,1.5,0.4,1.1,0.1C0.5-0.2,0,0.2,0,0.8
+          c0,0.4,0,11.8,0,12.4c0,0.6,0.6,0.9,1,0.7c0.6-0.4,9.1-5.9,9.6-6.2C11.1,7.4,11.1,6.6,10.7,6.3z"/>
+        </g>
+      </g>
+    </svg>
+  </button>
 
     <div class="widget-lang">
       <!--<a href="#" class="navigation-link-btn" data-action="show-lang">En</a> -->
@@ -206,6 +204,7 @@
               <br/>
 
                        <div class="audio_img_wrap">
+                        <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
             <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
             <a href="javascript:document.getElementById('audio_O6').pause();document.getElementById('O6_play').hidden=false">
               <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
@@ -637,6 +636,7 @@
               <br/>
 
                           <div class="audio_img_wrap">
+                            <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
             <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
             <a href="javascript:document.getElementById('audio_R6').pause();document.getElementById('R6_play').hidden=false">
               <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
