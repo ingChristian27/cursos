@@ -11020,3 +11020,7 @@ button#navigation-next {
 body.dark .navigation nav li.active a{
       font-weight: bold;
 }
+img.listen_audio {
+    left: 175px !important;
+    padding-top: 24px;
+}
