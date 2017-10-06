@@ -4209,7 +4209,7 @@ var NavigationCarousel = (function () {
 	_createClass(NavigationCarousel, [{
 		key: 'carouselMenu',
 		value: function carouselMenu() {
-			var _this27 = this;
+			/*var _this27 = this;
 
 			// if( window.innerWidth < 992 ) {
 			//   return false;
@@ -4393,7 +4393,7 @@ var NavigationCarousel = (function () {
 
 			this.MouseTouchMove();
 
-			this.changeClass();
+			this.changeClass();*/
 		}
 	}, {
 		key: 'goNext',
@@ -4467,7 +4467,7 @@ var NavigationCarousel = (function () {
 		key: 'goPrev',
 		value: function goPrev() {
 			var isKey = arguments.length <= 0 || arguments[0] === undefined ? false : arguments[0];
-
+			alert("pipe sigue siendo mk")
 			if (!this.carouselInit) {
 				// pages.closeAjaxPage();
 				pages.nextPage();
@@ -4627,7 +4627,7 @@ var NavigationCarousel = (function () {
 				} else if (Math.abs(tmp - items) === 1) {
 					lisClass = 'second-active';
 				} else {
-					lisClass = 'last-active';
+					lisClass = 'main-active';
 				}
 
 				if (this.lis[currentPosition + tmp]) {
@@ -4648,18 +4648,18 @@ var NavigationCarousel = (function () {
 			var length = this.allLiLength,
 			    lis = this.lis;
 
-			for (; length--;) {
+			/*for (; length--;) {
 				lis[length].classList.remove('last-active');
 				lis[length].classList.remove('second-active');
 				lis[length].classList.remove('main-active');
-			}
+			}*/
 		}
 
 		// open menushow full item in menu
 	}, {
 		key: 'openFullMenu',
 		value: function openFullMenu() {
-
+/*
 			if (window.innerWidth < 992) {
 				return false;
 			}
@@ -4705,7 +4705,7 @@ var NavigationCarousel = (function () {
 				transform(this.navMenu, has3d ? 'translate3d(0, ' + -this.liPosition[tempPosition] + 'px, 0)' : 'translateY(' + -this.liPosition[tempPosition] + 'px)');
 			}
 
-			this.navMenu.parentNode.style.height = this.fullHieght + 'px';
+			this.navMenu.parentNode.style.height = this.fullHieght + 'px';*/
 		}
 
 		// hide item

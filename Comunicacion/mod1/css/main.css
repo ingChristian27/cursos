@@ -6225,7 +6225,7 @@ button[data-action="show-lang"]:before {
   left: 0;
   z-index: 2;
   width: 100%;
-  height: 120px;
+  height: 100px;
   overflow: hidden;
 }
 /* line 1704, ../sass/cospo/elements/_navigation.scss */
@@ -11002,3 +11002,21 @@ h6 .cospo-comment-content span {
  .my_bodytext li{    
    padding-bottom: 20px;   
  } 
+
+ .button#prev-page{
+    left: 0%;
+    top: 70%;
+    transform: translateY(-50%) rotateY(180deg);
+    width: 69px;
+    height: 69px;
+    left: 0%;
+ }
+ button#prev-page {
+    top: 56%;
+}
+button#navigation-next {
+    top: 45%;
+}
+body.dark .navigation nav li.active a{
+      font-weight: bold;
+}
