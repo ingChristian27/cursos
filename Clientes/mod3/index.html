@@ -200,14 +200,30 @@
               <h6>Fases de la Atención al Cliente</h6>
               <br/>
 
-              <audio controls>
-                <source src="audios/O3.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-              </audio>
+             
+             <div class="audio_img_wrap">
+            <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
+            <a href="javascript:document.getElementById('audio_O3').pause();document.getElementById('O3_play').hidden=false">
+              <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
+            </a>
+            <a href="javascript:document.getElementById('audio_O3').play();document.getElementById('O3_play').hidden=true">
+              <img id="O3_play" class="audio_play" src="imagenes/general/audio_play.png"/ >
+            </a>
+          </div>
+          <audio id="audio_O3" class="audio_control" controls>
+            <source src="audios/O3.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <script >
+          document.getElementById('audio_O3').onended = function() {
+              document.getElementById('O3_play').hidden=false;
+          };
+          </script>
+
 
               <div class="display-table row">
                 <div class="display-table-cell col-md-3">
-                  <img src="imagenes/objetivos/iphone-element-1.png" alt=""/>
+                  <img style="width: 15em;" src="imagenes/objetivos/iphone-element-1.png" alt=""/>
                 </div>
                 <div class="display-table-cell col-md-3">
                   <ul class="large-block no-checkmark">
@@ -300,9 +316,9 @@
           <p>Disposici&oacute;n y accesibilidad</p>
           <ul>
             <li>Ser &aacute;gil para atender al cliente --> PROACTIVIDAD</li>
-            <li>Atender al cliente por iniciativa propia y con &nbsp; dinamismo.</li>
+            <li>Atender al cliente por iniciativa propia y con &nbsp; dinamismo</li>
             <li>Ayudar y acompa&ntilde;ar a los clientes</li>
-            <li>Dejar cualquier actividad que estemos haciendo si &nbsp; un cliente nos solicita ayuda.</li>
+            <li>Dejar cualquier actividad que estemos haciendo si &nbsp; un cliente nos solicita ayuda</li>
           </ul>
           <p>En el momento en el que el cliente entra en la tienda, podemos encontrarnos en las siguientes situaciones:</p>
 
@@ -312,13 +328,13 @@
 
 
           <ul style="list-style-type: upper-alpha;">
-            <li>DESOCUPADO: No hay nadie esperando a ser atendido.</li>
-            <li>OCUPADO: Hay m&aacute;s de dos personas esperando a ser atendidas.</li>
+            <li>DESOCUPADO: No hay nadie esperando a ser atendido</li>
+            <li>OCUPADO: Hay m&aacute;s de dos personas esperando a ser atendidas</li>
           </ul>
 
           
 
-          <p>Dependiendo de la situaci&oacute;n, deberemos realizar diferentes conductas y di&aacute;logos con el cliente.</p>
+          <p>Dependiendo de la situaci&oacute;n, deberemos realizar diferentes conductas y di&aacute;logos con el cliente</p>
           <p>&nbsp;</p>
 
           <figure>
@@ -328,19 +344,19 @@
 
           <p><strong>DESOCUPADO</strong></p>
           <ol>
-            <li>Salir al encuentro del cliente.</li>
-            <li>Dar la bienvenida.</li>
-            <li>Preguntar el qu&eacute; necesita o en qu&eacute; podemos ayudarle.</li>
-            <li>Direccionar al cliente a los productos.</li>
+            <li>Salir al encuentro del cliente</li>
+            <li>Dar la bienvenida</li>
+            <li>Preguntar el qu&eacute; necesita o en qu&eacute; podemos ayudarle</li>
+            <li>Direccionar al cliente a los productos</li>
           </ol>
           <p>&nbsp;</p>
           <p><strong>OCUPADO</strong></p>
           <ol>
-            <li>Sin dejar de atender al cliente actual, hacer una se&ntilde;al o un gesto que transmita a los clientes que esperan que ser&aacute;n atendidos brevemente.</li>
-            <li>Si podemos avisamos a un compa&ntilde;ero para que ayude al cliente.</li>
-            <li>Al terminar de atender al cliente actual, vamos a dar la bienvenida al cliente nuevo.</li>
-            <li>Preguntar que necesita o en que podemos ayudarle.</li>
-            <li>Direccionar al cliente a la exposici&oacute;n de productos o producto deseado.</li>
+            <li>Sin dejar de atender al cliente actual, hacer una se&ntilde;al o un gesto que transmita a los clientes que esperan que ser&aacute;n atendidos brevemente</li>
+            <li>Si podemos avisamos a un compa&ntilde;ero para que ayude al cliente</li>
+            <li>Al terminar de atender al cliente actual, vamos a dar la bienvenida al cliente nuevo</li>
+            <li>Preguntar que necesita o en que podemos ayudarle</li>
+            <li>Direccionar al cliente a la exposici&oacute;n de productos o producto deseado</li>
           </ol>
 
           <figure>
@@ -493,12 +509,12 @@
 
           <div class="my_bodytext">
             <ul style="list-style: disc;"">
-              <li>Preguntar  al cliente qué necesita o en qué podemos ayudarle:</li>
-              <li>Preguntas eficaces para conseguir información.</li>
-              <li>Resolver dudas.</li>
+              <li>Preguntar  al cliente qué necesita o en qué podemos ayudarle</li>
+              <li>Preguntas eficaces para conseguir información</li>
+              <li>Resolver dudas</li>
               <li>Dar a conocer ofertas y promociones</li>
-              <li>Direccionar al cliente a los productos o a otra persona si es necesario.</li>
-              <li>Cierre de la Venta.</li>
+              <li>Direccionar al cliente a los productos o a otra persona si es necesario</li>
+              <li>Cierre de la Venta</li>
             </ul>
 
           </div>
@@ -567,15 +583,15 @@
 <div class="my_bodytext">
               <p><strong>CARACTER&Iacute;STICAS</strong><strong>: DEFINEN</strong><strong> &nbsp; </strong></p>
               <ul>
-                <li>Son las especificaciones o propiedades del producto.</li>
+                <li>Son las especificaciones o propiedades del producto</li>
               </ul>
               <p><strong>VENTAJAS</strong><strong>: DIFERENCIAN</strong></p>
               <ul>
-                <li>Las ventajas son las diferencias respecto a otros productos de la competencia.</li>
+                <li>Las ventajas son las diferencias respecto a otros productos de la competencia</li>
               </ul>
               <p><strong>BENEFICIOS</strong><strong>: VENDEN</strong></p>
               <ul>
-                <li>Es la forma en&nbsp; la que el producto ayuda al cliente satisfaciendo las necesidades que &eacute;ste tiene. &nbsp;</li>
+                <li>Es la forma en&nbsp; la que el producto ayuda al cliente satisfaciendo las necesidades que &eacute;ste tiene &nbsp;</li>
               </ul>
             </div>
 
@@ -591,7 +607,7 @@
                 <p>Es la culminaci&oacute;n de la venta</p>
                 <p>La pregunta que nos hacemos es:</p>
                 <p><strong>&iquest;</strong><strong>Cu&aacute;l es el momento m&aacute;s id&oacute;neo para plantear el cierre? </strong></p>
-                <p>Cuando hayamos detectado en el cliente Se&ntilde;ales de compra</p>
+                <p>Cuando hayamos detectado en el cliente se&ntilde;ales de compra</p>
                 <p>Es decir, aquellas frases, palabras, preguntas, afirmaciones, etc. indicadoras de que el cliente ha aceptado el producto.</p>
                 <p>&nbsp;</p>
 
@@ -602,13 +618,13 @@
 
                 <p><strong>SE&Ntilde;ALES DE </strong><strong>COMPRA </strong><strong>DE LOS CLIENTES</strong></p>
                 <ul>
-                  <li>Una pregunta especial del cliente; hace muchas preguntas; se interesa por detalles.</li>
-                  <li>Solicita la opini&oacute;n de una tercera persona presente.</li>
+                  <li>Una pregunta especial del cliente; hace muchas preguntas; se interesa por detalles</li>
+                  <li>Solicita la opini&oacute;n de una tercera persona presente</li>
                   <li>Un cambio de actitud:</li>
-                  <li>Se relaja, sonr&iacute;e.</li>
-                  <li>Asiente con la cabeza.</li>
-                  <li>Muestra abiertamente inter&eacute;s.</li>
-                  <li>Realiza peque&ntilde;as aceptaciones continuamente.</li>
+                  <li>Se relaja, sonr&iacute;e</li>
+                  <li>Asiente con la cabeza</li>
+                  <li>Muestra abiertamente inter&eacute;s</li>
+                  <li>Realiza peque&ntilde;as aceptaciones continuamente</li>
                 </ul>
                 <p>&nbsp;</p>
               </div>
@@ -740,7 +756,7 @@
                       </svg>
 
                       <p>
-                        Todas las fases de la Atención al Cliente son fundamentales a la hora de ofrecer el mejor servicio.
+                        Todas las fases de la Atención al Cliente son fundamentales a la hora de ofrecer el mejor servicio
                       </p>
                     </li>
 
@@ -772,7 +788,7 @@
                       </svg>
 
                       <p>
-                        No se venden características de productos, sino beneficios.
+                        No se venden características de productos, sino beneficios
                       </p>
                     </li>
 
@@ -804,7 +820,7 @@
                       </svg>
 
                       <p>
-                        La despedida es la última impresión que el cliente tendrá del empleado.
+                        La despedida es la última impresión que el cliente tendrá del empleado
                       </p>
                     </li>
                   </ul>
