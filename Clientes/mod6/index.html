@@ -17,7 +17,10 @@
 
 </head>
 
-<body class="dark fasion-designer">
+<body class="dark fasion-designer"
+      onload="SCOInitialize()" 
+      onunload="SCOFinish()" 
+      onbeforeunload="SCOFinish()">
 
   <div class="main-preloader">
     <div class="ball-scale">
@@ -761,6 +764,7 @@
                       <p>
                         Un cliente insatisfecho comentará a 10 personas su percepción negativa
                       </p>
+                       <img   onClick= "JavaScript:EvaluateMultipleChoiceItem()"class="btn_end_module" src="imagenes/recuerda/Btn_terminar.png" />
                     </li>
                   </ul>
                 </div>
@@ -790,6 +794,33 @@
 <script src="js/app.js"></script>
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+<script src="js/SCORMGenericLogic.js" type="text/javascript" language="JavaScript">
+</script>
+
+  <script type="text/javascript" language="JavaScript">
+    var znScore = 0;
+   
+
+    function EvaluateMultipleChoiceItem() {
+
+        znScore = 100
+        console.log(znScore)
+        alert("guardado exitosamente, puedes continuar al siguiente módulo.");
+    }
+
+
+    function SCOSaveData() { 
+      // this function is called by the generic script before calling LMSFinish
+      if (!isNaN(znScore)) {
+        SCOSetValue("cmi.core.score.raw", znScore); // this will also set pass/fail status
+        SCOCommit() // to make sure that, no matter what happens, this has been recorded
+      }
+    }
+    function ShowSCORMStatus(){
+      alert('Last reported status was ' + SCOGetValue('cmi.core.lesson_status'))
+    }
+
+  </script>
 
 <script>
   var config1 = {
