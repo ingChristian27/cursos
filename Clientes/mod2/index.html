@@ -17,7 +17,10 @@
 
 </head>
 
-<body class="dark fasion-designer">
+<body class="dark fasion-designer"
+      onload="SCOInitialize()" 
+      onunload="SCOFinish()" 
+      onbeforeunload="SCOFinish()">
 
   <div class="main-preloader">
     <div class="ball-scale">
@@ -416,7 +419,7 @@
             </figure>
             
 
-          <p class="my_bodytext"><strong>Por tanto, tenemos que &hellip;.</strong></p>
+          <p class="my_bodytext"><strong>Por tanto, tenemos que &hellip;</strong></p>
 
                         <figure>
               <a data-fancybox="gallery" href="imagenes/calidad/superar.png">
@@ -425,7 +428,7 @@
             </figure>
 
           <div class="my_bodytext">
-              <p><strong>Por eso, la calidad significa &hellip;.</strong></p>
+              <p><strong>Por eso, la calidad significa &hellip;</strong></p>
 
               <figure>
               <a data-fancybox="gallery" href="imagenes/calidad/label4.jpg">
@@ -434,9 +437,9 @@
             </figure>
 
               <ul>
-                <li><strong>Superar las expectativas del cliente antes, durante y después del servicio.</strong></li>
+                <li><strong>Superar las expectativas del cliente antes, durante y después del servicio</strong></li>
                 <li>
-                  <p><strong>Hacerlo mejor y más rápido de lo que espera el cliente.</strong></p>
+                  <p><strong>Hacerlo mejor y más rápido de lo que espera el cliente</strong></p>
                 </li>
               </ul>
           </div>
@@ -1069,6 +1072,7 @@
                       <p>
                         La Escucha Activa implica interpretar el significado completo del mensaje del emisor, atendiendo a todos los factores que lo acompañan
                       </p>
+                       <img   onClick= "JavaScript:EvaluateMultipleChoiceItem()"class="btn_end_module" src="imagenes/recuerda/Btn_continuar.png" />
                     </li>
                   </ul>
                 </div>
@@ -1098,6 +1102,36 @@
 
 <script src="js/core.js"></script>
 <script src="js/app.js"></script>
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+<script src="js/SCORMGenericLogic.js" type="text/javascript" language="JavaScript">
+</script>
+
+  <script type="text/javascript" language="JavaScript">
+    var znScore = 0;
+   
+
+    function EvaluateMultipleChoiceItem() {
+
+        znScore = 100
+        console.log(znScore)
+        alert("guardado exitosamente, puedes continuar al siguiente módulo.");
+    }
+
+
+    function SCOSaveData() { 
+      // this function is called by the generic script before calling LMSFinish
+      if (!isNaN(znScore)) {
+        SCOSetValue("cmi.core.score.raw", znScore); // this will also set pass/fail status
+        SCOCommit() // to make sure that, no matter what happens, this has been recorded
+      }
+    }
+    function ShowSCORMStatus(){
+      alert('Last reported status was ' + SCOGetValue('cmi.core.lesson_status'))
+    }
+
+  </script>
+
 
 <script>
   var config1 = {

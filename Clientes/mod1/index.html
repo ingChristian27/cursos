@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-  <meta name="description" content="Cospo">
+  <meta name="description" content="cursos">
+
   <link rel="shortcut icon" href="img/favicon.ico"/>
 
   <title>Introducción a la atención al cliente</title>
@@ -17,7 +18,10 @@
 
 </head>
 
-<body class="dark fasion-designer">
+<body class="dark fasion-designer"
+      onload="SCOInitialize()" 
+      onunload="SCOFinish()" 
+      onbeforeunload="SCOFinish()">
 
   <div class="main-preloader">
     <div class="ball-scale">
@@ -42,7 +46,7 @@
 
                     <li><a href="#introduccion">QUÉ ES LA ATENCIÓN AL CLIENTE</a></li>
                     <li><a href="#importancia">IMPORTANCIA DE LA ATENCIÓN AL CLIENTE</a></li>
-                    <li><a href="#factores">TFACTORES DELA ATENCIÓN AL CLIENTE</a></li>
+                    <li><a href="#factores">FACTORES DELA ATENCIÓN AL CLIENTE</a></li>
 
                     <li><a href="#recuerda">RECUERDA</a></li>
                 </ul>
@@ -410,7 +414,7 @@
           <div class="content row half-height">
             <div class="col-md-5">
               <h2>Objetivos</h2>
-              <h6>Modulo 1  |  Introducción a la atención al cliente</h6>
+              <h6>Introducción a la atención al cliente</h6>
               <br/>
 
                       <div class="audio_img_wrap">
@@ -536,7 +540,7 @@
           <img src="imagenes/introduccion/image.jpg" alt="">
           <figcaption>
             <h2>Qué es la atención al cliente</h2>
-            <h6>Modulo 1  |  Introducción a la atención al cliente</h6>
+            <h6>  Introducción a la atención al cliente</h6>
             <br><br>
           </figcaption>
         </figure>
@@ -577,7 +581,7 @@
           <img src="imagenes/importancia/image.jpg" alt="">
           <figcaption>
             <h2>¿Por qué es tan importante la Atención al Cliente?</h2>
-            <h6>Modulo 1  |  Introducción a la atención al cliente</h6>
+            <h6> Introducción a la atención al cliente</h6>
             <br><br>
           </figcaption>
         </figure>
@@ -629,7 +633,7 @@
           <img src="imagenes/factores/image.jpg" alt="">
           <figcaption>
             <h2>QUÉ INFLUYE EN LA ATENCIÓN AL CLIENTE</h2>
-            <h6>Modulo 1  |  Introducción a la atención al cliente</h6>
+            <h6>Introducción a la atención al cliente</h6>
             <br><br>
           </figcaption>
         </figure>
@@ -778,6 +782,10 @@
                       <p>
                         Los factores personales son aquellos que dependen exclusivamente de los trabajadores
                       </p>
+                      
+                        <img   onClick= "JavaScript:EvaluateMultipleChoiceItem()"class="btn_end_module" src="imagenes/recuerda/Btn_continuar.png" />
+                      
+                      
                     </li>
                   </ul>
                 </div>
@@ -795,9 +803,6 @@
 
 
 
-
-
-
 </main>
 
 <script src="js/jquery-2.2.2.min.js"></script>
@@ -809,6 +814,39 @@
 
 <script src="js/core.js"></script>
 <script src="js/app.js"></script>
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script src="js/SCORMGenericLogic.js" type="text/javascript" language="JavaScript">
+</script>
+
+  <script type="text/javascript" language="JavaScript">
+    var znScore = 0;
+   
+
+    function EvaluateMultipleChoiceItem() {
+
+        znScore = 100
+        console.log(znScore)
+        alert("guardado exitosamente, puedes continuar al siguiente módulo.");
+    }
+
+
+    function SCOSaveData() { 
+      // this function is called by the generic script before calling LMSFinish
+      if (!isNaN(znScore)) {
+        SCOSetValue("cmi.core.score.raw", znScore); // this will also set pass/fail status
+        SCOCommit() // to make sure that, no matter what happens, this has been recorded
+      }
+    }
+    function ShowSCORMStatus(){
+      alert('Last reported status was ' + SCOGetValue('cmi.core.lesson_status'))
+    }
+
+  </script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
 
 <script>
   var config1 = {

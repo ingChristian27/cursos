@@ -16,7 +16,10 @@
 
 </head>
 
-<body class="dark fasion-designer">
+<body class="dark fasion-designer"
+      onload="SCOInitialize()" 
+      onunload="SCOFinish()" 
+      onbeforeunload="SCOFinish()">
 
   <div class="main-preloader">
     <div class="ball-scale">
@@ -207,9 +210,9 @@
 
   
                <div class="audio_img_wrap">
-                <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
+            <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
             <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
-            <a href="javascript:document.getElementById('audio_O4').pause();document.getElementById(O4_play').hidden=false">
+            <a href="javascript:document.getElementById('audio_O4').pause();document.getElementById('O4_play').hidden=false">
               <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
             </a>
             <a href="javascript:document.getElementById('audio_O4').play();document.getElementById('O4_play').hidden=true">
@@ -225,6 +228,7 @@
               document.getElementById('O4_play').hidden=false;
           };
           </script>
+
 
 
               <div class="display-table row">
@@ -643,9 +647,9 @@
               <br/>
 
                         <div class="audio_img_wrap">
-                          <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
+            <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
             <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
-            <a href="javascript:document.getElementById('audio_R4').pause();document.getElementById(R4_play').hidden=false">
+            <a href="javascript:document.getElementById('audio_R4').pause();document.getElementById('R4_play').hidden=false">
               <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
             </a>
             <a href="javascript:document.getElementById('audio_R4').play();document.getElementById('R4_play').hidden=true">
@@ -661,6 +665,7 @@
               document.getElementById('R4_play').hidden=false;
           };
           </script>
+
 
               <div class="display-table row">
                 <div class="display-table-cell col-md-3">
@@ -728,6 +733,7 @@
                       <p>
                         Las tres miradas al ser humano constan de: una mirada&nbsp;a la totalidad, una mirada&nbsp;en sus emociones y una mirada &nbsp;en los micro detalles
                       </p>
+                       <img   onClick= "JavaScript:EvaluateMultipleChoiceItem()"class="btn_end_module" src="imagenes/recuerda/Btn_terminar.png" />
                     </li>
                   </ul>
                 </div>
@@ -762,7 +768,33 @@
 <script src="js/app.js"></script>
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+<script src="js/SCORMGenericLogic.js" type="text/javascript" language="JavaScript">
+</script>
 
+  <script type="text/javascript" language="JavaScript">
+    var znScore = 0;
+   
+
+    function EvaluateMultipleChoiceItem() {
+
+        znScore = 100
+        console.log(znScore)
+        alert("guardado exitosamente, puedes continuar al siguiente módulo.");
+    }
+
+
+    function SCOSaveData() { 
+      // this function is called by the generic script before calling LMSFinish
+      if (!isNaN(znScore)) {
+        SCOSetValue("cmi.core.score.raw", znScore); // this will also set pass/fail status
+        SCOCommit() // to make sure that, no matter what happens, this has been recorded
+      }
+    }
+    function ShowSCORMStatus(){
+      alert('Last reported status was ' + SCOGetValue('cmi.core.lesson_status'))
+    }
+
+  </script>
 <script>
   var config1 = {
     'id': '690475437269590016',

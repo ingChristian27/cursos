@@ -10875,11 +10875,15 @@ h6 .cospo-comment-content span {
   opacity: 1;
   cursor: pointer;
 }
+div#scrolltut {
+    width: initial !important;
+}
 @media (min-width: 768px) {
   /* line 484, ../sass/cospo/_blog.scss */
   .user-area {
     right: 17px;
   }
+  
 }
 @media (min-width: 992px) {
   /* line 484, ../sass/cospo/_blog.scss */
@@ -10920,6 +10924,10 @@ h6 .cospo-comment-content span {
 }
 @media (max-width: 991px) {
   /* line 520, ../sass/cospo/_blog.scss */
+  div#scrolltut, button#navigation-next,  button#prev-page {
+    display: none;
+}
+
   .sign-in-page {
     position: fixed;
     top: 0;

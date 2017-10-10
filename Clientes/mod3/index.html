@@ -15,7 +15,10 @@
 
 </head>
 
-<body class="dark fasion-designer">
+<body class="dark fasion-designer"
+      onload="SCOInitialize()" 
+      onunload="SCOFinish()" 
+      onbeforeunload="SCOFinish()">
 
   <div class="main-preloader">
     <div class="ball-scale">
@@ -223,7 +226,7 @@
 
               <div class="display-table row">
                 <div class="display-table-cell col-md-3">
-                  <img style="width: 15em;" src="imagenes/objetivos/iphone-element-1.png" alt=""/>
+                  <img  src="imagenes/objetivos/iphone-element-1.png" alt=""/>
                 </div>
                 <div class="display-table-cell col-md-3">
                   <ul class="large-block no-checkmark">
@@ -309,7 +312,7 @@
             <img src="imagenes/acogida/image1.jpg" alt=""/>
           </figure>
 
-          <p class="my_bodytext">Debemos diferenciar <strong>3 Momentos </strong>distintos tanto durante la estancia del cliente en el establecimiento.</p>
+          <p class="my_bodytext">Debemos diferenciar <strong>3 Momentos </strong>distintos tanto durante la estancia del cliente en el establecimiento</p>
           
 
 <div class="my_bodytext">
@@ -418,9 +421,7 @@
 
        
 
-          <div style ="position: absolute;top: 0;left:46%" class="audio_img_wrap">
-            <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
-            <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
+          <div style ="position: absolute;top: 12%;left:50%" class="audio_img_wrap">
             <a href="javascript:document.getElementById('audio_A10').pause();document.getElementById('A10_play').hidden=false">
               <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
             </a>
@@ -439,9 +440,7 @@
           </script>
 
         
-        <div style ="position: absolute;bottom: 5%;left: 10%;" class="audio_img_wrap">
-          <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
-            <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
+        <div style ="position: absolute;bottom: 18%;left: 20%;" class="audio_img_wrap">
             <a href="javascript:document.getElementById('audio_A11').pause();document.getElementById('A11_play').hidden=false">
               <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
             </a>
@@ -460,9 +459,7 @@
           </script>
 
 
-        <div style ="position: absolute;bottom: 5%;left: 46%" class="audio_img_wrap">
-          <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
-            <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
+        <div style ="position: absolute;bottom: 18%;left: 50%" class="audio_img_wrap">
             <a href="javascript:document.getElementById('audio_A12').pause();document.getElementById('A12_play').hidden=false">
               <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
             </a>
@@ -481,9 +478,7 @@
           </script>
 
         
-        <div style ="position: absolute;bottom: 5%;right: 10%" class="audio_img_wrap">
-          <img class="listen_audio" style="width: 175px;position: absolute;left: 150px;" src="imagenes/general/audio_tooltip.png" />
-            <img class="audio_avatar" src="imagenes/general/audio_avatar.png" />
+        <div style ="position: absolute;bottom: 18%;right: 15%" class="audio_img_wrap">
             <a href="javascript:document.getElementById('audio_A13').pause();document.getElementById('A13_play').hidden=false">
               <img class="audio_stop" src="imagenes/general/audio_stop.png"/ >
             </a>
@@ -858,6 +853,7 @@
                       <p>
                         La despedida es la última impresión que el cliente tendrá del empleado
                       </p>
+                       <img   onClick= "JavaScript:EvaluateMultipleChoiceItem()"class="btn_end_module" src="imagenes/recuerda/Btn_continuar.png" />
                     </li>
                   </ul>
                 </div>
@@ -884,6 +880,36 @@
 
 <script src="js/core.js"></script>
 <script src="js/app.js"></script>
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+<script src="js/SCORMGenericLogic.js" type="text/javascript" language="JavaScript">
+</script>
+
+  <script type="text/javascript" language="JavaScript">
+    var znScore = 0;
+   
+
+    function EvaluateMultipleChoiceItem() {
+
+        znScore = 100
+        console.log(znScore)
+        alert("guardado exitosamente, puedes continuar al siguiente módulo.");
+    }
+
+
+    function SCOSaveData() { 
+      // this function is called by the generic script before calling LMSFinish
+      if (!isNaN(znScore)) {
+        SCOSetValue("cmi.core.score.raw", znScore); // this will also set pass/fail status
+        SCOCommit() // to make sure that, no matter what happens, this has been recorded
+      }
+    }
+    function ShowSCORMStatus(){
+      alert('Last reported status was ' + SCOGetValue('cmi.core.lesson_status'))
+    }
+
+  </script>
+
 
 <script>
   var config1 = {
