@@ -16,6 +16,8 @@
 // (function() {
 'use strict';
 
+var isInit = true;
+
 var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
@@ -1505,7 +1507,28 @@ var PageTranslate = (function () {
 	}, {
 		key: 'goTo',
 		value: function goTo(page) {
+			
+			if(this.currentPage == 0 && (page==this.contentPageLength-1)){
+				return true;
+			}
+
+			//Store session
+			if(isInit){
+				isInit = false;
+				if (localStorage.lastPage) {
+					page = localStorage.lastPage;
+				}
+			}else{
+				//guarda la nueva pagina en storage
+				if(page!=0){
+					localStorage.lastPage = page;
+				}
+			}
+
 			var _this8 = this;
+
+			//console.log(_this8)
+			//alert(_this8.contentPage[page].id)
 
 			var speed = arguments.length <= 1 || arguments[1] === undefined ? this.speed : arguments[1];
 			var timeFraction = arguments.length <= 2 || arguments[2] === undefined ? this.timeFraction : arguments[2];
@@ -1926,7 +1949,11 @@ var PageTranslate = (function () {
 				func();
 			}
 
-			this.backgrounds[this.previousPage + 1].classList.remove('previous-page-left');
+			if(this.backgrounds[this.previousPage + 1] === undefined){
+
+			}else{
+				this.backgrounds[this.previousPage + 1].classList.remove('previous-page-left');
+			}
 			// this.backgrounds[ this.previousPage ].classList.remove( 'previous-page-right' );
 
 			if (this.changeToFirstBg) {
