@@ -1513,15 +1513,16 @@ var PageTranslate = (function () {
 			}
 
 			//Store session
+			var id = $("body").attr("id");
 			if(isInit){
 				isInit = false;
-				if (localStorage.lastPage) {
-					page = localStorage.lastPage;
+				if (localStorage[id+"_lastPage"]) {
+					page = localStorage[id+"_lastPage"];
 				}
 			}else{
 				//guarda la nueva pagina en storage
 				if(page!=0){
-					localStorage.lastPage = page;
+					localStorage[id+"_lastPage"]=page;
 				}
 			}
 
